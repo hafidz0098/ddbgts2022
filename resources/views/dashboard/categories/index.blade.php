@@ -15,7 +15,7 @@
           <div class="card-body">
             <a href="/dashboard/posts/create" class="btn btn-primary mb-3">Create new categories</a>
               <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
                       <thead>
                           <tr>
                               <th>No</th>

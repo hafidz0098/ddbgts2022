@@ -108,7 +108,7 @@
     <script src="/js/demo/datatables-demo.js"></script>
 
     <script>
-        $('#dataTable').dataTable( {
+        $('#datatable').dataTable( {
           "ordering": false
         } );
     </script>
