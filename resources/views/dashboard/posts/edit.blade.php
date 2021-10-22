@@ -1,5 +1,5 @@
-@extends('dashboard.layouts.main')
-@section('container')
+@extends('dashboard.layouts.maindash')
+@section('content')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Edit Post</h1>
     </div>
@@ -27,7 +27,7 @@
             </div>
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
-                <select class="form-select" name="category_id">
+                <select class="custom-select" name="category_id">
                     @foreach ($categories as $category)
                     @if (old('category_id', $post->category_id) == $category->id)
                         <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
