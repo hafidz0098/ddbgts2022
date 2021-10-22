@@ -39,12 +39,21 @@
             <div class="mb-3">
                 <label for="image" class="form-label">Post image</label>
                 <img class="img-preview img-fluid mb-3 col-sm-5">
-                <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" onchange="previewImage()">
-                @error('image')
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input @error('image') is-invalid @enderror" id="image" name="image" onchange="previewImage()">
+                  <label class="custom-file-label" for="customFileLang">Upload</label>
+                  @error('image')
                   <div class="invalid-feedback">
                     {{ $message }}
                   </div>
                 @enderror
+                </div>
+                {{-- <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" onchange="previewImage()">
+                @error('image')
+                  <div class="invalid-feedback">
+                    {{ $message }}
+                  </div>
+                @enderror --}}
             </div>
             <div class="mb-3">
                 <label for="body" class="form-label">Body</label>
