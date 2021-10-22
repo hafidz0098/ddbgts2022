@@ -40,7 +40,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Administrator
+        Admin
     </div>
 
 
