@@ -91,9 +91,9 @@ class AdminCategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        if($category->author->id !== auth()->user()->id) {
-            abort(403);
-        }
+        // if($category->author->id !== auth()->user()->id) {
+        //     abort(403);
+        // }
 
         Category::destroy($category->id);
         return redirect('/dashboard/categories')->with('success', 'Categories has been deleted!');
