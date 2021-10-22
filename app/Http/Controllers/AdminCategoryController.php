@@ -41,7 +41,7 @@ class AdminCategoryController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'slug' => 'required|unique:posts'
+            'slug' => 'required|unique:categories'
         ]);
 
         $validatedData['user_id'] = auth()->user()->id;
