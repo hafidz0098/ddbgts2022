@@ -13,7 +13,7 @@
               <h6 class="m-0 font-weight-bold text-primary">Post Categories</h6>
           </div>
           <div class="card-body">
-            <a href="/dashboard/posts/create" class="btn btn-primary mb-3">Create new categories</a>
+            <a href="/dashboard/categories/create" class="btn btn-primary mb-3">Create new categories</a>
               <div class="table-responsive">
                   <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
                       <thead>
@@ -29,7 +29,6 @@
                               <td>{{ $loop->iteration }}</td>
                               <td>{{ $category->name }}</td>
                               <td>
-                                  <a href="/dashboard/categories/{{ $category->slug }}/edit" class=" btn btn-sm btn-warning btn-bordred"><i class="fa fa-edit" title="Edit"></i></a>
                                   <form action="/dashboard/categories/{{ $category->slug }}" method="post" class="d-inline">
                                       @method('delete')
                                       @csrf
