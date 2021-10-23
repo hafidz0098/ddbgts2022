@@ -96,7 +96,7 @@ class AdminCategoryController extends Controller
         // }
 
         Category::destroy($category->id);
-        return redirect('/dashboard/categories')->with('success', 'Categories has been deleted!');
+        return redirect('/dashboard/categories')->with('success', 'Category has been deleted!');
     }
 
     public function checkSlug(Request $request){

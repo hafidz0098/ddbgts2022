@@ -29,7 +29,7 @@
                               <td>{{ $loop->iteration }}</td>
                               <td>{{ $category->name }}</td>
                               <td>
-                                  <form action="/dashboard/categories/{{ $category->slug }}" method="post" class="d-inline">
+                                  <form action="/dashboard/categories/{{ $category->id }}" method="post" class="d-inline">
                                       @method('delete')
                                       @csrf
                                     <button class="btn btn-sm btn-danger btn-bordred" onclick="return confirm('Are you sure?')"><i class="fa fa-trash" title="Delete"></i></button>
