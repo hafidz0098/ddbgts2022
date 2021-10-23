@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePesertaTable extends Migration
+class CreateRumpunsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,8 @@ class CreatePesertaTable extends Migration
      */
     public function up()
     {
-        Schema::create('peserta', function (Blueprint $table) {
+        Schema::create('rumpuns', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('kategori_peserta_id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('image');
-            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
@@ -31,6 +26,6 @@ class CreatePesertaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('peserta');
+        Schema::dropIfExists('rumpuns');
     }
 }
