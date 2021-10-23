@@ -15,6 +15,11 @@ class CreatePesertasTable extends Migration
     {
         Schema::create('pesertas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('rumpuns_id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('image');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
