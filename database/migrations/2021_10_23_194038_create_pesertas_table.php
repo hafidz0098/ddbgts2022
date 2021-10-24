@@ -18,7 +18,7 @@ class CreatePesertasTable extends Migration
             $table->foreignId('rumpuns_id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('image');
+            $table->string('buktiTf');
             $table->boolean('status')->default(false);
             $table->timestamps();
         });
