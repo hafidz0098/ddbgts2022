@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Peserta;
+use App\Models\Rumpun;
 
 class DaftarController extends Controller
 {
     public function index(){
         return view('daftar.index', [
             'title' => 'daftar',
-            'active' => 'daftar'
+            'active' => 'daftar',
+            'rumpuns' => Rumpun::all()
         ]);
     }
 

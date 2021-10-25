@@ -13,26 +13,50 @@
             <div class="mb-3">
               <label for="name" class="form-label">Nama</label>
               <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Masukkan nama..." autofocus value="{{ old('name') }}">
+                @error('name')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="Masukkan alamat email..." autofocus value="{{ old('email') }}">
+                @error('email')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div class="mb-3">
                 <label for="asal" class="form-label">Asal Sekolah</label>
                 <input type="text" class="form-control @error('asal') is-invalid @enderror" id="asal" name="asal" placeholder="Masukkan asal sekolah..." autofocus value="{{ old('asal') }}">
+                @error('asal')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div class="mb-3">
                 <label for="rumpun" class="form-label">Kategori TRYOUT</label>
                 <select class="form-select" name="rumpun_id">
-                    <option selected>Pilih</option>
-                    <option value="1">Saintek</option>
-                    <option value="2">Soshum</option>
+                    @foreach ($rumpuns as $rumpun)
+                    @if (old('rumpun_id') == $rumpun->id)
+                        <option value="{{ $rumpun->id }}" selected>{{ $rumpun->name }}</option>
+                    @else
+                        <option value="{{ $rumpun->id }}">{{ $rumpun->name }}</option>
+                    @endif
+                    @endforeach
                 </select>
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Bukti Transfer</label>
                 <input class="form-control" type="file" id="bukti" name="bukti">
+                @error('bukti')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
               </div>
             <button type="submit" class="btn btn-primary">Daftar</button>
         </form>
