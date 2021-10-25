@@ -20,18 +20,18 @@ class DaftarController extends Controller
 
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'rumpun_id' => 'required',
             'email' => 'required|email:dns|unique:pesertas',
-            'asal' => 'required|max:255',
-            'bukti' => 'required|image|file|max:1024'
+            'asal_sekolah' => 'required|max:255',
+            'rumpun_id' => 'required',
+            'bukti_tf' => 'required|image|file|max:1024'
         ]);
 
-        $validatedData['bukti'] = $request->file('bukti')->store('bukti-tf');
+        $validatedData['bukti_tf'] = $request->file('bukti_tf')->store('bukti-tf');
 
         Peserta::create($validatedData);
 
         // $request->session()->flash('success', 'Registration successfully! Please login');
 
-        return redirect('/daftar')->with('success', 'Pendaftaran berhasil!, silahkan cek inbox/spam email anda');
+        return redirect('/daftar')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email anda!');
     }
 }

@@ -32,9 +32,9 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="asal" class="form-label">Asal Sekolah</label>
-                <input type="text" class="form-control @error('asal') is-invalid @enderror" id="asal" name="asal" placeholder="Masukkan asal sekolah..." autofocus value="{{ old('asal') }}">
-                @error('asal')
+                <label for="asal_sekolah" class="form-label">Asal Sekolah</label>
+                <input type="text" class="form-control @error('asal_sekolah') is-invalid @enderror" id="asal_sekolah" name="asal_sekolah" placeholder="Masukkan asal sekolah..." autofocus value="{{ old('asal_sekolah') }}">
+                @error('asal_sekolah')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
@@ -54,8 +54,8 @@
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Bukti Transfer</label>
-                <input class="form-control" type="file" id="bukti" name="bukti">
-                @error('bukti')
+                <input class="form-control" type="file" id="bukti_tf" name="bukti_tf">
+                @error('bukti_tf')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
