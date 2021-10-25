@@ -17,13 +17,16 @@ class DaftarController extends Controller
     }
 
     public function store(Request $request){
+
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'rumpun_id' => 'required',
-            'email' => 'required|email:dns|unique:users',
-            'asal_sekolah' => 'required|max:255',
-            'image' => 'required|image|file|max:1024'
+            'email' => 'required|email:dns|unique:pesertas',
+            'asal' => 'required|max:255',
+            'bukti' => 'required|image|file|max:1024'
         ]);
+
+        $validatedData['bukti'] = $request->file('bukti')->store('bukti-tf');
 
         Peserta::create($validatedData);
 

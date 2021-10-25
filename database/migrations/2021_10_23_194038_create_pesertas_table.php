@@ -15,10 +15,10 @@ class CreatePesertasTable extends Migration
     {
         Schema::create('pesertas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('rumpun_id');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('asal_sekolah');
+            $table->foreignId('rumpun_id');
             $table->string('bukti_tf');
             $table->boolean('status')->default(false);
             $table->timestamps();
