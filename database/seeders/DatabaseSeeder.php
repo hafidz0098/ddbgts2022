@@ -46,6 +46,16 @@ class DatabaseSeeder extends Seeder
             'name' => 'Personal',
             'slug' => 'personal'
         ]);
+
+        Rumpun::create([
+            'name' => 'Saintek',
+            'slug' => 'saintek'
+        ]);
+
+        Rumpun::create([
+            'name' => 'Soshum',
+            'slug' => 'soshum'
+        ]);
         
 
         Post::factory(20)->create();
