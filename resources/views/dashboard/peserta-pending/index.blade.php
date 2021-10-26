@@ -34,7 +34,7 @@
                               <td>{{ $peserta->email }}</td>
                               <td>{{ $peserta->asal_sekolah }}</td>
                               <td>{{ $peserta->rumpun->name }}</td>
-                              <td>{{ $peserta->bukti_tf }}</td>
+                              <td><img src="{{ asset('storage/'. $peserta->bukti_tf) }}" width="100" height="100"></td>
                               <td>
                                   <form action="/dashboard/peserta-pending/{{ $peserta->id }}" method="post" class="d-inline">
                                       @method('delete')
