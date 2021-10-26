@@ -78,3 +78,5 @@ Route::get('/dashboard/categories/checkSlug', [AdminCategoryController::class , 
 Route::resource('/dashboard/posts', 'DashboardPostController')->middleware('auth');  
 
 Route::resource('/dashboard/categories', 'AdminCategoryController')->except('show')->middleware('admin');
+
+Route::resource('/dashboard/peserta-pending', 'PesertaController')->middleware('auth'); 

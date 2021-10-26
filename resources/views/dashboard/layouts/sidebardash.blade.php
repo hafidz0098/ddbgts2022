@@ -49,6 +49,12 @@
             <span>Post Categories</span></a>
     </li>
 
+    <li class="nav-item {{ Request::is('dashboard/categories*') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/peserta-pending">
+            <i class="fas fa-users"></i>
+            <span>Peserta Pending</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     @endcan
