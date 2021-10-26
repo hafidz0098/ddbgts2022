@@ -21,6 +21,7 @@
                               <th>Name</th>
                               <th>Email</th>
                               <th>Asal Sekolah</th>
+                              <th>Keminatan</th>
                               <th>Bukti TF</th>
                               <th>Action</th>
                           </tr>
@@ -32,6 +33,7 @@
                               <td>{{ $peserta->name }}</td>
                               <td>{{ $peserta->email }}</td>
                               <td>{{ $peserta->asal_sekolah }}</td>
+                              <td>{{ $peserta->rumpun->name }}</td>
                               <td>{{ $peserta->bukti_tf }}</td>
                               <td>
                                   <form action="/dashboard/peserta-pending/{{ $peserta->id }}" method="post" class="d-inline">

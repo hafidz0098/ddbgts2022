@@ -15,7 +15,7 @@ class PesertaController extends Controller
     public function index()
     {
         return view('dashboard.peserta-pending.index', [
-            'pesertas' => Peserta::all()
+            'pesertas' => Peserta::orderBy('created_at', 'desc')->get()
         ]);
     }
 

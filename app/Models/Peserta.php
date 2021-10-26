@@ -11,7 +11,7 @@ class Peserta extends Model
 
     protected $guarded = ['id'];
 
-    public function kategori(){
-        return $this->belongsTo(Kategori::class);
+    public function rumpun(){
+        return $this->belongsTo(Rumpun::class, 'rumpun_id');
     }
 }

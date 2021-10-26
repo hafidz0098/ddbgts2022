@@ -49,7 +49,7 @@
             <span>Post Categories</span></a>
     </li>
 
-    <li class="nav-item {{ Request::is('dashboard/categories*') ? 'active' : '' }}">
+    <li class="nav-item {{ Request::is('dashboard/peserta-pending*') ? 'active' : '' }}">
         <a class="nav-link" href="/dashboard/peserta-pending">
             <i class="fas fa-users"></i>
             <span>Peserta Pending</span></a>
