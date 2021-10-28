@@ -79,4 +79,4 @@ Route::resource('/dashboard/posts', 'DashboardPostController')->middleware('auth
 
 Route::resource('/dashboard/categories', 'AdminCategoryController')->except('show')->middleware('admin');
 
-Route::resource('/dashboard/peserta-pending', 'PesertaController')->middleware('auth'); 
+Route::resource('/dashboard/peserta-pending', 'PesertaController')->middleware('admin');

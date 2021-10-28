@@ -20,6 +20,7 @@
                               <th>No</th>
                               <th>Name</th>
                               <th>Email</th>
+                              <th>Nomor WA</th>
                               <th>Asal Sekolah</th>
                               <th>Keminatan</th>
                               <th>Bukti TF</th>
@@ -32,6 +33,7 @@
                               <td>{{ $loop->iteration }}</td>
                               <td>{{ $peserta->name }}</td>
                               <td>{{ $peserta->email }}</td>
+                              <td>{{ $peserta->nomor_wa }}</td>
                               <td>{{ $peserta->asal_sekolah }}</td>
                               <td>{{ $peserta->rumpun->name }}</td>
                               <td><img src="{{ asset('storage/'. $peserta->bukti_tf) }}" width="100" height="100"></td>

@@ -22,6 +22,7 @@ class DaftarController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email:dns|unique:pesertas',
             'asal_sekolah' => 'required|max:255',
+            'nomor_wa' => 'required|max:20',
             'rumpun_id' => 'required',
             'bukti_tf' => 'required|image|file|max:1024'
         ]);
