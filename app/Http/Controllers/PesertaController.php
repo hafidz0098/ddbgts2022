@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Peserta;
+use App\Models\Status;
 use Illuminate\Http\Request;
 
 class PesertaController extends Controller
@@ -15,7 +16,8 @@ class PesertaController extends Controller
     public function index()
     {
         return view('dashboard.peserta-pending.index', [
-            'pesertas' => Peserta::orderBy('created_at', 'desc')->get()
+            'pesertas' => Peserta::orderBy('created_at', 'desc')->get(),
+            'statuses' => Status::all()
         ]);
     }
 
@@ -59,7 +61,7 @@ class PesertaController extends Controller
      */
     public function edit(Peserta $peserta)
     {
-        //
+
     }
 
     /**
@@ -71,7 +73,15 @@ class PesertaController extends Controller
      */
     public function update(Request $request, Peserta $peserta)
     {
-        //
+        $rules = [
+            'status_id' => 'required',
+        ];
+
+        $validatedData = $request->validate($rules);    
+
+        Peserta::where('id', $peserta->id)->update($validatedData);
+
+        return redirect('/dashboard/peserta-pending')->with('success', 'Peserta has been updated!');
     }
 
     /**

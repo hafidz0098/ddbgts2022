@@ -21,7 +21,7 @@ class CreatePesertasTable extends Migration
             $table->string('asal_sekolah');
             $table->foreignId('rumpun_id');
             $table->string('bukti_tf');
-            $table->boolean('status')->default(false);
+            $table->foreignId('status_id')->default('1');
             $table->timestamps();
         });
     }

@@ -24,6 +24,7 @@
                               <th>Asal Sekolah</th>
                               <th>Keminatan</th>
                               <th>Bukti TF</th>
+                              <th>Status</th>
                               <th>Action</th>
                           </tr>
                       </thead>
@@ -38,12 +39,23 @@
                               <td>{{ $peserta->rumpun->name }}</td>
                               <td><img src="{{ asset('storage/'. $peserta->bukti_tf) }}" width="100" height="100"></td>
                               <td>
-                                  <form action="/dashboard/peserta-pending/{{ $peserta->id }}" method="post" class="d-inline">
-                                      @method('delete')
-                                      @csrf
-                                    <button class="btn btn-sm btn-danger btn-bordred" onclick="return confirm('Are you sure?')"><i class="fa fa-trash" title="Delete"></i></button>
-                                  </form>
+                                <form method="post" action="/dashboard/peserta-pending/{{ $peserta->id }}">
+                                  @method('put')
+                                  @csrf
+                                <select class="custom-select" name="status_id">
+                                  @foreach ($statuses as $status)
+                                  @if (old('status_id') == $status->id)
+                                      <option value="{{ $status->id }}" selected>{{ $status->name }}</option>
+                                  @else
+                                      <option value="{{ $status->id }}">{{ $status->name }}</option>
+                                  @endif
+                                  @endforeach
+                                </select>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-primary">Update</button>
                               </td>  
+                                </form>
                           </tr>  
                         @endforeach
                       </tbody>

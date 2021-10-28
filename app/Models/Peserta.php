@@ -14,4 +14,9 @@ class Peserta extends Model
     public function rumpun(){
         return $this->belongsTo(Rumpun::class, 'rumpun_id');
     }
+
+    public function status(){
+        return $this->belongsTo(Status::class, 'status_id');
+    }
+
 }

@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Rumpun;
+use App\Models\Status;
 
 class DatabaseSeeder extends Seeder
 {
@@ -56,6 +57,21 @@ class DatabaseSeeder extends Seeder
         Rumpun::create([
             'name' => 'Soshum',
             'slug' => 'soshum'
+        ]);
+
+        Status::create([
+            'name' => 'Pending',
+            'slug' => 'pending'
+        ]);
+
+        Status::create([
+            'name' => 'Sukses',
+            'slug' => 'sukses'
+        ]);
+
+        Status::create([
+            'name' => 'Gagal',
+            'slug' => 'gagal'
         ]);
         
 
