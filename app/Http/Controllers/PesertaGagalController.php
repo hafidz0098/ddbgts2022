@@ -14,7 +14,7 @@ class PesertaGagalController extends Controller
      */
     public function index()
     {
-        return view('dashboard.peserta-sukses.index', [
+        return view('dashboard.peserta-gagal.index', [
             'pesertas' => Peserta::where('status_id', '3')->orderBy('updated_at', 'desc')->get()
         ]);
     }
