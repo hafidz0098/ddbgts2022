@@ -61,7 +61,6 @@ class PesertaController extends Controller
      */
     public function edit(Peserta $peserta)
     {
-
     }
 
     /**
@@ -71,15 +70,15 @@ class PesertaController extends Controller
      * @param  \App\Models\Peserta  $peserta
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Peserta $peserta)
+    public function update(Request $request, $id)
     {
         $rules = [
             'status_id' => 'required'
         ];
 
-        $validatedData = $request->validate($rules);  
+        $validatedData = $request->validate($rules);
 
-        Peserta::where('id', $peserta->id)->update($validatedData);
+        Peserta::find($id)->update($validatedData);
 
         return redirect('/dashboard/peserta-pending')->with('success', 'Peserta has been updated!');
     }
