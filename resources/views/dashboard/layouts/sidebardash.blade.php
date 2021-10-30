@@ -50,7 +50,7 @@
             <span>Post Categories</span></a>
     </li>
 
-    <li class="nav-item {{ Request::is('dashboard/peserta-pending*') ? 'active' : '' }}">
+    <li class="nav-item {{ Request::is('dashboard/peserta*') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-users"></i>
