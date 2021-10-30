@@ -79,6 +79,8 @@ class PesertaController extends Controller
 
         $validatedData = $request->validate($rules);  
 
+        dd($peserta->id);
+
         Peserta::where('id', $peserta->id)->update($validatedData);
 
         return redirect('/dashboard/peserta-pending')->with('success', 'Peserta has been updated!');
