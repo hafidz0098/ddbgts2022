@@ -61,6 +61,12 @@
             <span>Peserta Sukses</span></a>
     </li>
 
+    <li class="nav-item {{ Request::is('dashboard/peserta-gagal*') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/peserta-gagal">
+            <i class="fas fa-user-times"></i>
+            <span>Peserta Gagal</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     @endcan
