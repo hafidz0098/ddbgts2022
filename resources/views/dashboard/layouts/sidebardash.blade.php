@@ -57,7 +57,7 @@
 
     <li class="nav-item {{ Request::is('dashboard/peserta-sukses*') ? 'active' : '' }}">
         <a class="nav-link" href="/dashboard/peserta-sukses">
-            <i class="fas fa-user-clock"></i>
+            <i class="fas fa-user-plus"></i>
             <span>Peserta Sukses</span></a>
     </li>
 
