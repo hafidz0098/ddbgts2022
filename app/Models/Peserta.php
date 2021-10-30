@@ -10,6 +10,7 @@ class Peserta extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+    protected $with = ['rumpun'];
 
     public function rumpun(){
         return $this->belongsTo(Rumpun::class, 'rumpun_id');

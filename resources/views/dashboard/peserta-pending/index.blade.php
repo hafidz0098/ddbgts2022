@@ -42,15 +42,15 @@
                                 <form method="post" action="/dashboard/peserta-pending/{{ $peserta->id }}">
                                   @method('put')
                                   @csrf
-                                <select class="custom-select" name="status_id">
-                                  @foreach ($statuses as $status)
-                                  @if (old('status_id') == $status->id)
-                                      <option value="{{ $status->id }}" selected>{{ $status->name }}</option>
-                                  @else
-                                      <option value="{{ $status->id }}">{{ $status->name }}</option>
-                                  @endif
-                                  @endforeach
-                                </select>
+                                  <select class="custom-select" name="status_id">
+                                    @foreach ($statuses as $status)
+                                    @if (old('status_id', $peserta->status_id) == $status->id)
+                                        <option value="{{ $status->id }}" selected>{{ $status->name }}</option>
+                                    @else
+                                        <option value="{{ $status->id }}">{{ $status->name }}</option>
+                                    @endif
+                                    @endforeach
+                                  </select>
                               </td>
                               <td>
                                 <button type="submit" class="btn btn-primary">Update</button>

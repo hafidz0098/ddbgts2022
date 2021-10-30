@@ -74,10 +74,10 @@ class PesertaController extends Controller
     public function update(Request $request, Peserta $peserta)
     {
         $rules = [
-            'status_id' => 'required',
+            'status_id' => 'required'
         ];
 
-        $validatedData = $request->validate($rules);    
+        $validatedData = $request->validate($rules);  
 
         Peserta::where('id', $peserta->id)->update($validatedData);
 
