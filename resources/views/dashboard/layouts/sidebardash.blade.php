@@ -51,8 +51,14 @@
 
     <li class="nav-item {{ Request::is('dashboard/peserta-pending*') ? 'active' : '' }}">
         <a class="nav-link" href="/dashboard/peserta-pending">
-            <i class="fas fa-users"></i>
+            <i class="fas fa-user-clock"></i>
             <span>Peserta Pending</span></a>
+    </li>
+
+    <li class="nav-item {{ Request::is('dashboard/peserta-sukses*') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/peserta-sukses">
+            <i class="fas fa-user-clock"></i>
+            <span>Peserta Sukses</span></a>
     </li>
 
     <!-- Divider -->
