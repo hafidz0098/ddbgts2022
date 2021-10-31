@@ -53,7 +53,7 @@
                                   </select>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?')">Update</button>
                               </td>  
                                 </form>
                           </tr>  
