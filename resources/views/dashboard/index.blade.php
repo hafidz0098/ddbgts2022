@@ -4,6 +4,9 @@
         <h1 class="h2">Welcome back, {{ auth()->user()->name }}</h1>
     </div>
 
+
+    <a class="btn btn-primary mb-3" href="{{ route('exportpeserta') }}" role="button">Export Peserta</a>
+
     <div class="row">
 
         

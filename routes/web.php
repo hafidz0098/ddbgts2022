@@ -67,6 +67,8 @@ Route::post('/daftar', 'DaftarController@store');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth');
 
+Route::get('/exportpeserta', 'PesertaController@pesertaexport')->name('exportpeserta')->middleware('auth'); 
+
 // Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class , 'checkSlug'])->middleware('auth');
 // Route::get('/dashboard/categories/checkSlug', [AdminCategoryController::class , 'checkSlug'])->middleware('auth');
 

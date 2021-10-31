@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Peserta;
 use App\Models\Status;
 use Illuminate\Http\Request;
+use App\Exports\PesertaExport;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Http\Controllers\Controller;
 
 class PesertaController extends Controller
 {
@@ -19,6 +22,10 @@ class PesertaController extends Controller
             'pesertas' => Peserta::where('status_id', '1')->orderBy('created_at', 'desc')->get(),
             'statuses' => Status::all()
         ]);
+    }
+
+    public function pesertaexport(){
+        return Excel::download(new PesertaExport, 'peserta.xlsx');
     }
 
     /**
