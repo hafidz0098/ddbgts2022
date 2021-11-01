@@ -39,7 +39,7 @@
                           {{ $message }}
                       </div>
                   @enderror
-              </div>
+            </div>
             <div class="mb-3">
                 <label for="asal_sekolah" class="form-label">Asal Sekolah</label>
                 <input type="text" class="form-control @error('asal_sekolah') is-invalid @enderror" id="asal_sekolah" name="asal_sekolah" placeholder="Masukkan asal sekolah..." autofocus value="{{ old('asal_sekolah') }}">
