@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 Use App\Models\Peserta;
 
-class WelcomeEmail extends Mailable
+class KonfirmasiEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -35,6 +35,6 @@ class WelcomeEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.welcome')->subject($this->subject);
+        return $this->view('emails.konfirmasi');
     }
 }

@@ -33,7 +33,7 @@ class DaftarController extends Controller
 
         $peserta = Peserta::create($validatedData);
 
-        Mail::to($validatedData['email'])->send(new WelcomeEMail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022"));
+        Mail::to($validatedData['email'])->send(new WelcomeEMail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));
         // $request->session()->flash('success', 'Registration successfully! Please login');
 
         return redirect('/daftar')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email anda!');

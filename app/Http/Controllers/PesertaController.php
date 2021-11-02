@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use App\Exports\PesertaExport;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\KonfirmasiEmail;
+
 
 class PesertaController extends Controller
 {
@@ -85,7 +88,14 @@ class PesertaController extends Controller
 
         $validatedData = $request->validate($rules);
 
-        Peserta::find($id)->update($validatedData);
+        $peserta = Peserta::find($id);
+        $peserta->update($validatedData);
+
+        if($validatedData['status_id'] == 2){
+            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2021"));
+        }else{
+            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Gagal", "Mohon maaf, pendaftaran Anda belum berhasil dilakukan. Mohon melakukan pendaftaran ulang"));
+        }
 
         return redirect('/dashboard/peserta-pending')->with('success', 'Peserta has been updated!');
     }
