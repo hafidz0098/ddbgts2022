@@ -154,7 +154,7 @@
               <td height="40" class="em_height">&nbsp;</td>
             </tr>
             <tr>
-              <td align="center"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/logo.png" width="230" height="80" style="display:block;font-family: Arial, sans-serif; font-size:15px; line-height:18px; color:#30373b;  font-weight:bold;" border="0" alt="LoGo Here" /></a></td>
+              <td align="center"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://live.staticflickr.com/65535/50778727273_eeb43e1157_c.jpg" width="80" height="80" style="display:block;font-family: Arial, sans-serif; font-size:15px; line-height:18px; color:#30373b;  font-weight:bold;" border="0" /></a></td>
             </tr>
             <tr>
               <td height="30" class="em_height">&nbsp;</td>
