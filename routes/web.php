@@ -8,6 +8,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminCategoryController;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,6 +65,8 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/daftar', 'DaftarController@index')->middleware('guest');
 Route::post('/daftar', 'DaftarController@store');
+
+Route::get('/email', 'EmailController@index');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth');
 
