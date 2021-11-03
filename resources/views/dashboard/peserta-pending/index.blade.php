@@ -15,8 +15,8 @@
           <div class="card-body">
               <div class="table-responsive">
                   <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
-                      <thead>
-                          <tr>
+                      <thead class="p-3 mb-2 bg-warning text-white">
+                          <tr align="center">
                               <th>No</th>
                               <th>Name</th>
                               <th>Email</th>
@@ -30,7 +30,7 @@
                       </thead>
                       <tbody>
                         @foreach ($pesertas as $peserta)
-                          <tr>
+                          <tr align="center">
                               <td>{{ $loop->iteration }}</td>
                               <td>{{ $peserta->name }}</td>
                               <td>{{ $peserta->email }}</td>
@@ -53,7 +53,7 @@
                                   </select>
                               </td>
                               <td>
-                                <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?')">Update</button>
+                                <button type="submit" class="btn btn-primary btn-sm" onclick="return confirm('Are you sure?')">Update</button>
                               </td>  
                                 </form>
                           </tr>  

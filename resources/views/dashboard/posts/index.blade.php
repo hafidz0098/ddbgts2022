@@ -17,7 +17,7 @@
                 <div class="table-responsive">
                     <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
                         <thead>
-                            <tr>
+                            <tr align="center">
                                 <th>No</th>
                                 <th>Title</th>
                                 <th>Category</th>
@@ -26,7 +26,7 @@
                         </thead>
                         <tbody>
                           @foreach ($posts as $post)
-                            <tr>
+                            <tr align="center">
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $post->title }}</td>
                                 <td>{{ $post->category->name }}</td>

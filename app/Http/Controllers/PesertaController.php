@@ -10,6 +10,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\KonfirmasiEmail;
+use Illuminate\Support\Facades\Storage;
 
 
 class PesertaController extends Controller
@@ -92,6 +93,7 @@ class PesertaController extends Controller
         $peserta->update($validatedData);
 
         if($validatedData['status_id'] == 2){
+            Storage::delete($peserta->bukti_tf);
             Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2021"));
         }else{
             Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Gagal", "Mohon maaf, pendaftaran Anda belum berhasil dilakukan. Mohon melakukan pendaftaran ulang"));
