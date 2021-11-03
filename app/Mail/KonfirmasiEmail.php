@@ -17,15 +17,15 @@ class KonfirmasiEmail extends Mailable
      *
      * @return void
      */
-    public $data;
-    public $subject;
-    public $pesan;
+    public $data, $subject, $pesan, $button, $url;
 
-    public function __construct(Peserta $data, $subject, $pesan)
+    public function __construct(Peserta $data, $subject, $pesan, $button, $url)
     {
         $this->data = $data;
         $this->subject = $subject;
         $this->pesan = $pesan;
+        $this->button = $button;
+        $this->url = $url;
     }
 
     /**

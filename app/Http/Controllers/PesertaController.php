@@ -90,13 +90,14 @@ class PesertaController extends Controller
         $validatedData = $request->validate($rules);
 
         $peserta = Peserta::find($id);
+        $peserta->verified_by = auth()->user()->name;
         $peserta->update($validatedData);
 
         if($validatedData['status_id'] == 2){
             Storage::delete($peserta->bukti_tf);
-            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2021"));
+            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2021", "Join Group Whatsapp", "www.youtube.com"));
         }else{
-            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Gagal", "Mohon maaf, pendaftaran Anda belum berhasil dilakukan. Mohon melakukan pendaftaran ulang"));
+            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Gagal", "Mohon maaf, pendaftaran Anda belum berhasil dilakukan. Mohon melakukan pendaftaran ulang", "Daftar Ulang", "www.twitter.com"));
         }
 
         return redirect('/dashboard/peserta-pending')->with('success', 'Peserta has been updated!');

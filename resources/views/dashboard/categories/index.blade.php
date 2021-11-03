@@ -17,7 +17,7 @@
               <div class="table-responsive">
                   <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
                       <thead>
-                          <tr align="center">
+                          <tr>
                               <th>No</th>
                               <th>Category Name</th>
                               <th>Action</th>
@@ -25,10 +25,10 @@
                       </thead>
                       <tbody>
                         @foreach ($categories as $category)
-                          <tr align="center">
+                          <tr>
                               <td>{{ $loop->iteration }}</td>
                               <td>{{ $category->name }}</td>
-                              <td>
+                              <td align="center">
                                   <form action="/dashboard/categories/{{ $category->id }}" method="post" class="d-inline">
                                       @method('delete')
                                       @csrf

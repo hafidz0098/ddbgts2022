@@ -131,7 +131,7 @@
                             <tbody>
                               <tr>
                                 <td style="border: none; border-radius: 3px; color: white; cursor: auto; padding: 15px 19px;" align="center" valign="middle" bgcolor="#5865f2">
-                                  <a href="www.youtube.com" style="text-decoration: none; line-height: 100%; background: #5865f2; color: white; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; text-transform: none; margin: 0px;" target="_blank" rel="noopener">Join Group Whatsapp</a>
+                                  <a href={{ $url }} style="text-decoration: none; line-height: 100%; background: #5865f2; color: white; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; text-transform: none; margin: 0px;" target="_blank" rel="noopener">{{ $button }}</a>
                                 </td>
                               </tr>
                             </tbody>

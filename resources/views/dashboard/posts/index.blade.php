@@ -17,7 +17,7 @@
                 <div class="table-responsive">
                     <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
                         <thead>
-                            <tr align="center">
+                            <tr>
                                 <th>No</th>
                                 <th>Title</th>
                                 <th>Category</th>
@@ -26,11 +26,11 @@
                         </thead>
                         <tbody>
                           @foreach ($posts as $post)
-                            <tr align="center">
+                            <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $post->title }}</td>
                                 <td>{{ $post->category->name }}</td>
-                                <td>
+                                <td align="center">
                                     <a href="/dashboard/posts/{{ $post->slug }}" class=" btn btn-sm btn-info btn-bordred"><i class="fa fa-eye" title="Show"></i></a>
                                     <a href="/dashboard/posts/{{ $post->slug }}/edit" class=" btn btn-sm btn-warning btn-bordred"><i class="fa fa-edit" title="Edit"></i></a>
                                     <form action="/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">

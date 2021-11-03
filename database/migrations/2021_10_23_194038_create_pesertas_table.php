@@ -22,6 +22,7 @@ class CreatePesertasTable extends Migration
             $table->foreignId('rumpun_id');
             $table->string('bukti_tf');
             $table->foreignId('status_id')->default('1');
+            $table->string('verified_by')->nullable();
             $table->timestamps();
         });
     }
