@@ -1,265 +1,217 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>WELCOME</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
-    <meta name="format-detection" content="telephone=no" />
-    <!--[if !mso]><!-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <!--<![endif]-->
-    <style type="text/css">
-      body {
-      -webkit-text-size-adjust: 100% !important;
-      -ms-text-size-adjust: 100% !important;
-      -webkit-font-smoothing: antialiased !important;
-      }
-      img {
-      border: 0 !important;
-      outline: none !important;
-      }
-      p {
-      Margin: 0px !important;
-      Padding: 0px !important;
-      }
-      table {
-      border-collapse: collapse;
-      mso-table-lspace: 0px;
-      mso-table-rspace: 0px;
-      }
-      td, a, span {
-      border-collapse: collapse;
-      mso-line-height-rule: exactly;
-      }
-      .ExternalClass * {
-      line-height: 100%;
-      }
-      span.MsoHyperlink {
-      mso-style-priority:99;
-      color:inherit;}
-      span.MsoHyperlinkFollowed {
-      mso-style-priority:99;
-      color:inherit;}
-      </style>
-      <style media="only screen and (min-width:481px) and (max-width:599px)" type="text/css">
-      @media only screen and (min-width:481px) and (max-width:599px) {
-      table[class=em_main_table] {
-      width: 100% !important;
-      }
-      table[class=em_wrapper] {
-      width: 100% !important;
-      }
-      td[class=em_hide], br[class=em_hide] {
-      display: none !important;
-      }
-      img[class=em_full_img] {
-      width: 100% !important;
-      height: auto !important;
-      }
-      td[class=em_align_cent] {
-      text-align: center !important;
-      }
-      td[class=em_aside]{
-      padding-left:10px !important;
-      padding-right:10px !important;
-      }
-      td[class=em_height]{
-      height: 20px !important;
-      }
-      td[class=em_font]{
-      font-size:14px !important;	
-      }
-      td[class=em_align_cent1] {
-      text-align: center !important;
-      padding-bottom: 10px !important;
-      }
-      }
-      </style>
-      <style media="only screen and (max-width:480px)" type="text/css">
-      @media only screen and (max-width:480px) {
-      table[class=em_main_table] {
-      width: 100% !important;
-      }
-      table[class=em_wrapper] {
-      width: 100% !important;
-      }
-      td[class=em_hide], br[class=em_hide], span[class=em_hide] {
-      display: none !important;
-      }
-      img[class=em_full_img] {
-      width: 100% !important;
-      height: auto !important;
-      }
-      td[class=em_align_cent] {
-      text-align: center !important;
-      }
-      td[class=em_align_cent1] {
-      text-align: center !important;
-      padding-bottom: 10px !important;
-      }
-      td[class=em_height]{
-      height: 20px !important;
-      }
-      td[class=em_aside]{
-      padding-left:10px !important;
-      padding-right:10px !important;
-      } 
-      td[class=em_font]{
-      font-size:14px !important;
-      line-height:28px !important;
-      }
-      span[class=em_br]{
-      display:block !important;
-      }
-      }
-    </style>
-  </head>
-  <body style="margin:0px; padding:0px;" bgcolor="#ffffff">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-      <!-- === PRE HEADER SECTION=== -->  
-      <tr>
-        <td align="center" valign="top"  bgcolor="#30373b">
-          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
-            <tr>
-              <td style="line-height:0px; font-size:0px;" width="600" class="em_hide" bgcolor="#30373b"><img src="images/spacer.gif" height="1"  width="600" style="max-height:1px; min-height:1px; display:block; width:600px; min-width:600px;" border="0" alt="" /></td>
-            </tr>
-            <tr>
-              <td valign="top">
-                <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="em_wrapper">
-                  <tr>
-                    <td height="10" class="em_height" style="font-size:1px; line-height:1px;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td valign="top">
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td height="10" class="em_height" style="font-size:1px; line-height:1px;">&nbsp;</td>
-                  </tr>
+<div>
+  <div><!-- [if !mso]><!-- --> <!--<![endif]--></div>
+</div>
+<style>#outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  .ExternalClass * { line-height:100%; }
+  body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+  p { display: block; margin: 13px 0; }</style>
+<div>
+  <div><!-- [if !mso]><!--></div>
+</div>
+<style>@media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+  }</style>
+<div>
+  <div><!--<![endif]--> <!-- [if mso]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]--> <!-- [if lte mso 11]>
+<style type="text/css">
+  .outlook-group-fix {
+    width:100% !important;
+  }
+</style>
+<![endif]--> <!-- [if !mso]><!--></div>
+</div>
+<style>@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);</style>
+<div>
+  <div><!--<![endif]--></div>
+</div>
+<style>@media only screen and (min-width:480px) {
+    .mj-column-per-100, * [aria-labelledby="mj-column-per-100"] { width:100%!important; }
+  }</style>
+<div>
+  <div>
+    <div style="background-color: #f9f9f9;"><!-- [if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="640" align="center" style="width:640px;">
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]--></div>
+  </div>
+</div>
+<style>html, body, * {
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+    }
+    a {
+      color:#1EB0F4;
+      text-decoration:none;
+    }
+    a:hover {
+      text-decoration:underline;
+    }</style>
+<div>
+  <div style="background-color: #f9f9f9;">
+    <div style="margin: 0px auto; max-width: 640px; background: transparent;">
+      <table style="font-size: 0px; width: 100%; background: transparent;" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+          <tr>
+            <td style="text-align: center; vertical-align: top; direction: ltr; font-size: 0px; padding: 40px 0px;">
+              <div class="mj-column-per-100 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 100%;" aria-labelledby="mj-column-per-100">
+                <br>
+                <table role="presentation" border="0" width="100%" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="center">&nbsp; &nbsp; &nbsp;&nbsp;
+                        <table style="border-collapse: collapse; border-spacing: 0px;" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tbody>
+                            <tr>
+                              <td style="width: 138px;">
+                                <a href="https://click.discord.com/ls/click?upn=qDOo8cnwIoKzt0aLL1cBeARJoBrGSa2vu41A5vK-2B4ute1kWYI6zNuxQFCVciWW4KNeeO_qsxHZ37bLgHtBvvKA7HQTioCIjIMt1vnvjv0R2ZNj-2BlSz7wS38wVCRbSMpwWXYRMoc9kdmCBufNdpMHTYRQ25f-2Ba451-2FJ9Cg7XA-2BF-2B6R-2FU-2FzENH1OJcESnNTOwNgmHMsPRRsadchImPn4GkpJm-2FkWxajllix-2FOgtwidAX0Cr4M62Gwnp2rAbM4ejH4P5-2BwajhhKUmkbucX9kTK2L7ikKlIHUk1jOQMliJjr8IJWCtio-3D" target="_blank" rel="noopener">
+                                  <img style="border: none; outline: none; text-decoration: none; width: 78px; height: 74px; display: block; margin-left: auto; margin-right: auto;" title="" src="https://i.ibb.co/6Yj1hMF/50778727273-eeb43e1157-c-removebg-preview.png" alt="" width="138" height="38px">
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
+              </div>
+<!-- [if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- [if mso | IE]>
+      </td></tr></table>
+      <![endif]--> <!-- [if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="640" align="center" style="width:640px;">
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    <div style="max-width: 640px; margin: 0 auto; box-shadow: 0px 1px 5px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+      <div style="margin: 0px auto; max-width: 640px; background: #ffffff;">
+        <table style="font-size: 0px; width: 100%; background: #ffffff;" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tbody>
+            <tr>
+              <td style="text-align: center; vertical-align: top; direction: ltr; font-size: 0px; padding: 40px 50px;"><!-- [if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:640px;">
+      <![endif]-->
+                <div class="mj-column-per-100 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 100%;" aria-labelledby="mj-column-per-100">
+                  <table role="presentation" border="0" width="100%" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="left">
+                          <div style="cursor: auto; color: #737f8d; font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16px; line-height: 24px; text-align: left;">
+                            <h2 style="font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 500; font-size: 20px; color: #4f545c; letter-spacing: 0.27px;">Hey 
+                              <strong>{{ $data->name }}</strong>,
+                            </h2>
+                            <p>{{ $subject }}</p>
+                            <p> {{ $pesan }}</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="word-break: break-word; font-size: 0px; padding: 10px 25px; padding-top: 20px;" align="center">
+                          <table style="border-collapse: separate;" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+                              <tr>
+                                <td style="border: none; border-radius: 3px; color: white; cursor: auto; padding: 15px 19px;" align="center" valign="middle" bgcolor="#5865f2">
+                                  <a href="www.youtube.com" style="text-decoration: none; line-height: 100%; background: #5865f2; color: white; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; text-transform: none; margin: 0px;" target="_blank" rel="noopener">Join Group Whatsapp</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="word-break: break-word; font-size: 0px; padding: 30px 0px;">
+                          <p style="font-size: 1px; margin: 0px auto; border-top: 1px solid #DCDDDE; width: 100%;">&nbsp;</p>
+<!-- [if mso | IE]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="font-size:1px;margin:0px auto;border-top:1px solid #DCDDDE;width:100%;" width="640"><tr><td style="height:0;line-height:0;"> </td></tr></table><![endif]-->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="left">
+                          <div style="cursor: auto; color: #747f8d; font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 13px; line-height: 16px; text-align: left;">
+                            <p>Butuh bantuan? Silahkan hubungi kami via DM Instagram 
+                              <a href="https://www.instagram.com/ddbgts/">@ddbgts</a>
+                              <br>
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+<!-- [if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
               </td>
             </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- === //PRE HEADER SECTION=== -->  
-      <!-- === BODY SECTION=== --> 
-      <tr>
-        <td align="center" valign="top"  bgcolor="#ffffff">
-          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
-            <!-- === LOGO SECTION === -->
-            <tr>
-              <td height="40" class="em_height">&nbsp;</td>
-            </tr>
-            <tr>
-              <td align="center"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGoogle_%2522G%2522_Logo.svg&psig=AOvVaw0HDFB2VNKPa7cRTSNLLlTf&ust=1635950898231000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjEsJP2-fMCFQAAAAAdAAAAABAD" width="100" height="100" style="display:block;font-family: Arial, sans-serif; font-size:15px; line-height:18px; color:#30373b;  font-weight:bold;" border="0" /></a></td>
-            </tr>
-            <tr>
-              <td height="30" class="em_height">&nbsp;</td>
-            </tr>
-            <!-- === //LOGO SECTION === -->
-            <!-- === IMG WITH TEXT AND COUPEN CODE SECTION === -->
-            <tr>
-              <td valign="top" class="em_aside">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td height="36" class="em_height">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td valign="middle" align="center"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/banner.jpg" width="333" height="303" alt="WELCOME" style="display:block; font-family:Arial, sans-serif; font-size:25px; line-height:303px; color:#c27cbb;max-width:333px;" class="em_full_img" border="0" /></td>
-                  </tr>
-                  <tr>
-                    <td height="41" class="em_height">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td height="1" bgcolor="#d8e4f0" style="font-size:0px;line-height:0px;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/spacer.gif" width="1" height="1" alt="" style="display:block;" border="0" /></td>
-                  </tr>
-                  <tr>
-                    <td height="35" class="em_height">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:15px; font-weight:bold; line-height:18px; color:#30373b;">Halo, {{ $data->name }} {{ $subject }}</td>
-                  </tr>
-                  <tr>
-                    <td height="22" style="font-size:1px; line-height:1px;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:18px; font-weight:bold; line-height:20px; color:#000000;">{{ $pesan }}</td>
-                  </tr>
-                  <tr>
-                    <td height="34" class="em_height">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td height="31" class="em_height">&nbsp;</td>
-                  </tr>
+          </tbody>
+        </table>
+      </div>
+<!-- [if mso | IE]>
+      </td></tr></table>
+      <![endif]--> <!-- [if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="640" align="center" style="width:640px;">
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    </div>
+    <div style="margin: 0px auto; max-width: 640px; background: transparent;">
+      <table style="font-size: 0px; width: 100%; background: transparent;" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+          <tr>
+            <td style="text-align: center; vertical-align: top; direction: ltr; font-size: 0px; padding: 20px 0px;"><!-- [if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:640px;">
+      <![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix" style="vertical-align: top; display: inline-block; direction: ltr; font-size: 13px; text-align: left; width: 100%;" aria-labelledby="mj-column-per-100">
+                <table role="presentation" border="0" width="100%" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="center">
+                        <div style="cursor: auto; color: #99aab5; font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 12px; line-height: 24px; text-align: center;">Made By PIT DDBGTS 2022</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="center">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="left">
+                        <div style="cursor: auto; color: #000000; font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 13px; line-height: 22px; text-align: left;">
+                          <img src="https://discord.com/api/science/760352489164898325/47e1b934-63d7-45dd-b348-b7811fdbf91b.gif?properties=eyJlbWFpbF90eXBlIjogInVzZXJfcGFzc3dvcmRfcmVzZXRfcmVxdWVzdCJ9" width="1" height="1">
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
-              </td>
-            </tr>
-            <!-- === //IMG WITH TEXT AND COUPEN CODE SECTION === -->
-          </table>
-        </td>
-      </tr>
-      <!-- === //BODY SECTION=== -->
-      <!-- === FOOTER SECTION === -->
-      <tr>
-        <td align="center" valign="top"  bgcolor="#30373b" class="em_aside">
-          <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
-            <tr>
-              <td height="35" class="em_height">&nbsp;</td>
-            </tr>
-            <tr>
-              <td valign="top" align="center">
-                <table border="0" cellspacing="0" cellpadding="0" align="center">
-                  <tr>
-                    <td valign="top"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/fb.png" width="26" height="26" style="display:block;font-family: Arial, sans-serif; font-size:10px; line-height:18px; color:#feae39; " border="0" alt="Fb" /></a></td>
-                    <td width="7">&nbsp;</td>
-                    <td valign="top"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/tw.png" width="26" height="26" style="display:block;font-family: Arial, sans-serif; font-size:10px; line-height:18px; color:#feae39; " border="0" alt="Tw" /></a></td>
-                    <td width="7">&nbsp;</td>
-                    <td valign="top"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/pint.png" width="26" height="26" style="display:block;font-family: Arial, sans-serif; font-size:10px; line-height:18px; color:#feae39; " border="0" alt="pint" /></a></td>
-                    <td width="7">&nbsp;</td>
-                    <td valign="top"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/google.png" width="26" height="26" style="display:block;font-family: Arial, sans-serif; font-size:10px; line-height:18px; color:#feae39; " border="0" alt="G+" /></a></td>
-                    <td width="7">&nbsp;</td>
-                    <td valign="top"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/insta.png" width="26" height="26" style="display:block;font-family: Arial, sans-serif; font-size:10px; line-height:18px; color:#feae39; " border="0" alt="Insta" /></a></td>
-                    <td width="7">&nbsp;</td>
-                    <td valign="top"><a href="#" target="_blank" style="text-decoration:none;"><img src="https://www.sendwithus.com/assets/img/emailmonks/images/yt.png" width="26" height="26" style="display:block;font-family: Arial, sans-serif; font-size:10px; line-height:18px; color:#feae39; " border="0" alt="Yt" /></a></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td height="22" class="em_height">&nbsp;</td>
-            </tr>
-            <tr>
-              <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:12px; line-height:18px; color:#848789; text-transform:uppercase;">
-               <span style="text-decoration:underline;"><a href="#" target="_blank" style="text-decoration:underline; color:#848789;">PRIVACY STATEMENT</a></span> &nbsp;&nbsp;|&nbsp;&nbsp; <span style="text-decoration:underline;"><a href="#" target="_blank" style="text-decoration:underline; color:#848789;">TERMS OF SERVICE</a></span><span class="em_hide"> &nbsp;&nbsp;|&nbsp;&nbsp; </span><span class="em_br"></span><span style="text-decoration:underline;"><a href="#" target="_blank" style="text-decoration:underline; color:#848789;">RETURNS</a></span>
-              </td>
-            </tr>
-            <tr>
-              <td height="10" style="font-size:1px; line-height:1px;">&nbsp;</td>
-            </tr>
-            <tr>
-              <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:12px; line-height:18px; color:#848789;text-transform:uppercase;">
-                &copy;2&zwnj;016 company name. All Rights Reserved.
-              </td>
-            </tr>
-            <tr>
-              <td height="10" style="font-size:1px; line-height:1px;">&nbsp;</td>
-            </tr>
-            <tr>
-              <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:12px; line-height:18px; color:#848789;text-transform:uppercase;">
-                If you do not wish to receive any further emails from us, please  <span style="text-decoration:underline;"><a href="#" target="_blank" style="text-decoration:underline; color:#848789;">unsubscribe</a></span>
-              </td>
-            </tr>
-            <tr>
-              <td height="35" class="em_height">&nbsp;</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- === //FOOTER SECTION === -->
-    </table>
-    <div style="display:none; white-space:nowrap; font:20px courier; color:#ffffff; background-color:#ffffff;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-  </body>
-</html>
+              </div>
+<!-- [if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- [if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
+  </div>
+  <img style="height: 1px !important; width: 1px !important; border-width: 0 !important; padding: 0 !important; margin: 0 !important;" src="https://click.discord.com/wf/open?upn=9LDHJrdOkQv7jI-2FSv78piVTOoVgYBbrq1h33j8B3MwB-2Fj4JS4ukYOlzMwggkLALJgBv34dJrCu6HZ0-2BWofo1uRle3DYI-2FMlnaIOA1A-2BreNdSX5wXqCjc8HF-2B5OyVeANuTXXW6tXBaWZrQPf1ZR5PTGgrR-2B52Nx5P8XLFYVYS1N1Om0el24vTR3Ipxu7-2FYMUGcRK1Tu4-2FHN5FVtMqReQoPBnVg-2BCUdqcs9zMMNrxpqYI-3D" alt="" width="1" height="1" border="0">
+</div>
