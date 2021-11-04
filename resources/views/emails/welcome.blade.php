@@ -76,7 +76,7 @@
                           <tbody>
                             <tr>
                               <td style="width: 138px;">
-                                <a href="https://click.discord.com/ls/click?upn=qDOo8cnwIoKzt0aLL1cBeARJoBrGSa2vu41A5vK-2B4ute1kWYI6zNuxQFCVciWW4KNeeO_qsxHZ37bLgHtBvvKA7HQTioCIjIMt1vnvjv0R2ZNj-2BlSz7wS38wVCRbSMpwWXYRMoc9kdmCBufNdpMHTYRQ25f-2Ba451-2FJ9Cg7XA-2BF-2B6R-2FU-2FzENH1OJcESnNTOwNgmHMsPRRsadchImPn4GkpJm-2FkWxajllix-2FOgtwidAX0Cr4M62Gwnp2rAbM4ejH4P5-2BwajhhKUmkbucX9kTK2L7ikKlIHUk1jOQMliJjr8IJWCtio-3D" target="_blank" rel="noopener">
+                                <a href="#" target="_blank" rel="noopener">
                                   <img style="border: none; outline: none; text-decoration: none; width: 78px; height: 74px; display: block; margin-left: auto; margin-right: auto;" title="" src="https://i.ibb.co/6Yj1hMF/50778727273-eeb43e1157-c-removebg-preview.png" alt="" width="138" height="38px">
                                 </a>
                               </td>
@@ -117,7 +117,7 @@
                       <tr>
                         <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="left">
                           <div style="cursor: auto; color: #737f8d; font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 16px; line-height: 24px; text-align: left;">
-                            <h2 style="font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 500; font-size: 20px; color: #4f545c; letter-spacing: 0.27px;">Hey 
+                            <h2 style="font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-weight: 500; font-size: 20px; color: #4f545c; letter-spacing: 0.27px;">Halo
                               <strong>{{ $data->name }}</strong>,
                             </h2>
                             <p>{{ $subject }}</p>
@@ -181,7 +181,7 @@
                     <tr>
                       <td style="word-break: break-word; font-size: 0px; padding: 0px;" align="left">
                         <div style="cursor: auto; color: #000000; font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; font-size: 13px; line-height: 22px; text-align: left;">
-                          <img src="https://discord.com/api/science/760352489164898325/47e1b934-63d7-45dd-b348-b7811fdbf91b.gif?properties=eyJlbWFpbF90eXBlIjogInVzZXJfcGFzc3dvcmRfcmVzZXRfcmVxdWVzdCJ9" width="1" height="1">
+                          <img src="#" width="1" height="1">
                         </div>
                       </td>
                     </tr>
@@ -200,5 +200,5 @@
       </td></tr></table>
       <![endif]-->
   </div>
-  <img style="height: 1px !important; width: 1px !important; border-width: 0 !important; padding: 0 !important; margin: 0 !important;" src="https://click.discord.com/wf/open?upn=9LDHJrdOkQv7jI-2FSv78piVTOoVgYBbrq1h33j8B3MwB-2Fj4JS4ukYOlzMwggkLALJgBv34dJrCu6HZ0-2BWofo1uRle3DYI-2FMlnaIOA1A-2BreNdSX5wXqCjc8HF-2B5OyVeANuTXXW6tXBaWZrQPf1ZR5PTGgrR-2B52Nx5P8XLFYVYS1N1Om0el24vTR3Ipxu7-2FYMUGcRK1Tu4-2FHN5FVtMqReQoPBnVg-2BCUdqcs9zMMNrxpqYI-3D" alt="" width="1" height="1" border="0">
+  <img style="height: 1px !important; width: 1px !important; border-width: 0 !important; padding: 0 !important; margin: 0 !important;" src="#" alt="" width="1" height="1" border="0">
 </div>
