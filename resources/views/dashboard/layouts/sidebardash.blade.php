@@ -66,6 +66,12 @@
         </div>
     </li>
 
+    <li class="nav-item {{ Request::is('dashboard/ticketbox*') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/ticketbox">
+            <i class="fas fa-ticket-alt"></i>
+            <span>Ticket Box</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     @endcan

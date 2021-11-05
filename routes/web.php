@@ -88,4 +88,7 @@ Route::resource('/dashboard/peserta-sukses', 'PesertaSuksesController')->middlew
 
 Route::resource('/dashboard/peserta-gagal', 'PesertaGagalController')->middleware('admin');
 
+Route::resource('/dashboard/ticketbox', 'TicketboxController')->middleware('admin');
+Route::post('/dashboard/ticketbox', 'TicketboxController@store')->middleware('admin');
+
 

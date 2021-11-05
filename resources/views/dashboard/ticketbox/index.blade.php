@@ -1,17 +1,16 @@
-@extends('layouts.main')
-
-@section('container')
- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Form Pendaftaran</h1>
+@extends('dashboard.layouts.maindash')
+@section('content')
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Ticket Box</h1>
 </div>
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-8">
         @if(session()->has('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}
                 </div>
         @endif
-        <form method="POST" action="/daftar" enctype="multipart/form-data">
+        <form method="POST" action="/dashboard/ticketbox"">
             @csrf
             <div class="mb-3">
               <label for="name" class="form-label">Nama</label>
@@ -51,7 +50,7 @@
             </div>
             <div class="mb-3">
                 <label for="rumpun" class="form-label">Kategori TRYOUT</label>
-                <select class="form-select" name="rumpun_id">
+                <select class="custom-select" name="rumpun_id">
                     @foreach ($rumpuns as $rumpun)
                     @if (old('rumpun_id') == $rumpun->id)
                         <option value="{{ $rumpun->id }}" selected>{{ $rumpun->name }}</option>
@@ -62,17 +61,14 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="formFile" class="form-label">Bukti Bayar</label>
-                <input class="form-control @error('bukti_tf') is-invalid @enderror" type="file" id="bukti_tf" name="bukti_tf">
-                @error('bukti_tf')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror
-              </div>
+                <label for="lokasi" class="form-label">Lokasi</label>
+                <select class="custom-select" name="lokasi">
+                   <option value="Cafe 02 Parepare">Cafe 02 Parepare</option>
+                   <option value="KFC Parepare">KFC Parepare</option>
+                </select>
+            </div>
             <button type="submit" class="btn btn-primary">Daftar</button>
         </form>
     </div>
 </div>
-
 @endsection

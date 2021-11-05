@@ -27,6 +27,17 @@ class DaftarController extends Controller
             'nomor_wa' => 'required|max:20|unique:pesertas',
             'rumpun_id' => 'required',
             'bukti_tf' => 'required|image|file|max:1024'
+        ], [
+            'name.required' => 'Mohon masukkan nama anda',
+            'email.required' => 'Mohon masukkan alamat email anda',
+            'email.unique' => 'Email sudah terdaftar',
+            'asal_sekolah.required' => 'Mohon masukkan asal sekolah anda',
+            'nomor_wa.required' => 'Mohon masukkan nomor whatsapp anda',
+            'nomor_wa.unique' => 'Nomor whatsapp sudah terdaftar',
+            'rumpun_id.required' => 'Mohon pilih kategori anda',
+            'bukti_tf.required' => 'Mohon upload bukti bayar anda',
+            'bukti_tf.image' => 'Bukti bayar harus berekstensi jpg/png',
+            'bukti_tf.max' => 'Ukuran maksimal adalah 1 Mb'
         ]);
 
         $validatedData['bukti_tf'] = $request->file('bukti_tf')->store('bukti-tf');
