@@ -32,9 +32,6 @@ Route::get('/about', function () {
     return view ('about', [
         "title" => "About",
         'active' => 'about',
-        "name" => "Hafidz",
-        "email" => "hafidz_hafidz@student.ub.ac.id",
-        "image" => "img/hafidz.png"
     ]);
 });
 
