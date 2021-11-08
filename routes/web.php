@@ -9,6 +9,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\SendMailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,8 +58,6 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
-// Route::get('/daftar', [App\Http\Controllers\DaftarController::class, 'index'])->middleware('guest');
-// Route::post('/daftar', [App\Http\Controllers\DaftarController::class, 'store']);
 
 Route::get('/daftar', 'DaftarController@index')->middleware('guest');
 Route::post('/daftar', 'DaftarController@store');
@@ -68,9 +67,6 @@ Route::get('/email', 'EmailController@index');
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth');
 
 Route::get('/exportpeserta', 'PesertaController@pesertaexport')->name('exportpeserta')->middleware('auth'); 
-
-// Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class , 'checkSlug'])->middleware('auth');
-// Route::get('/dashboard/categories/checkSlug', [AdminCategoryController::class , 'checkSlug'])->middleware('auth');
 
 Route::get('/dashboard/posts/checkSlug', 'DashboardPostController@checkSlug')->middleware('auth');
 Route::get('/dashboard/categories/checkSlug', [AdminCategoryController::class , 'checkSlug'])->middleware('auth');
@@ -86,6 +82,12 @@ Route::resource('/dashboard/peserta-sukses', 'PesertaSuksesController')->middlew
 Route::resource('/dashboard/peserta-gagal', 'PesertaGagalController')->middleware('admin');
 
 Route::resource('/dashboard/ticketbox', 'TicketboxController')->middleware('admin');
+
+Route::get('/dashboard/webinar', 'EmailController@viewWebinar')->middleware('admin');
+Route::post('/dashboard/webinar', 'EmailController@kirimWebinar')->middleware('admin');
+Route::put('/dashboard/webinar', 'EmailController@kirimWebinar')->middleware('admin');
+
 Route::post('/dashboard/ticketbox', 'TicketboxController@store')->middleware('admin');
+
 
 

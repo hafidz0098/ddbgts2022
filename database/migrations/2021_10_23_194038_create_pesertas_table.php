@@ -23,6 +23,8 @@ class CreatePesertasTable extends Migration
             $table->string('bukti_tf')->nullable();
             $table->foreignId('status_id')->default('1');
             $table->string('verified_by')->nullable();
+            $table->boolean('send_webinar')->default(false);
+            $table->boolean('send_tryout')->default(false);
             $table->timestamps();
         });
     }

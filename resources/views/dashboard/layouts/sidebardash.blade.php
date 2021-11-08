@@ -72,6 +72,19 @@
             <span>Ticket Box</span></a>
     </li>
 
+    <li class="nav-item {{ Request::is('dashboard/webinar*') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/webinar">
+            <i class="fas fa-bullhorn"></i>
+            <span>Webinar</span></a>
+    </li>
+
+    <li class="nav-item {{ Request::is('dashboard/tryout*') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/tryout">
+            <i class="fas fa-marker"></i>
+            <span>Tryout</span></a>
+    </li>
+   
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     @endcan
