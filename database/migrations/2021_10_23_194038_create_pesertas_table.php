@@ -17,6 +17,8 @@ class CreatePesertasTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('username_to')->nullable();
+            $table->string('password_to')->nullable();
             $table->string('nomor_wa')->unique();
             $table->string('asal_sekolah');
             $table->foreignId('rumpun_id');
