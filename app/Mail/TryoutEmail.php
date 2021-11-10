@@ -55,6 +55,6 @@ class TryoutEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.tryout')->subject($this->subject);
+        return $this->markdown('emails.tryout')->subject($this->subject);
     }
 }

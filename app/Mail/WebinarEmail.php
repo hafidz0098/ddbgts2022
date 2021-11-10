@@ -51,6 +51,6 @@ class WebinarEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.webinar')->subject($this->subject);
+        return $this->markdown('emails.webinar')->subject($this->subject);
     }
 }
