@@ -48,10 +48,6 @@
                               </div>
                               <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
                           </form>
-                          <hr>
-                          <div class="text-center">
-                              <a class="small" href="/register">Create an Account!</a>
-                          </div>
                       </div>
                   </div>
               </div>
