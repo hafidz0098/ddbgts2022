@@ -83,6 +83,12 @@
             <i class="fas fa-marker"></i>
             <span>Tryout</span></a>
     </li>
+
+    <li class="nav-item {{ Request::is('dashboard/daftaradmin*') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/daftaradmin">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span>Daftar Admin</span></a>
+    </li>
    
 
     <!-- Divider -->

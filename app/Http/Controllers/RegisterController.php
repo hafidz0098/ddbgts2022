@@ -9,9 +9,8 @@ use Illuminate\Support\Facades\Hash;
 class RegisterController extends Controller
 {
     public function index(){
-        return view('register.index', [
-            'title' => 'Register',
-            'active' => 'register'
+        return view('dashboard.daftaradmin.index', [
+            'title' => 'Daftar Admin',
         ]);
     }
 
@@ -26,11 +25,15 @@ class RegisterController extends Controller
         // $validatedData['password'] = bcrypt($validatedData['password']);
         $validatedData['password'] = Hash::make($validatedData['password']);
 
+        if(auth()->user()->email != 'hafidznak123@gmail.com' ){
+            return redirect('/dashboard/daftaradmin')->with('error', 'Anda tidak dapat menambahkan admin baru!');
+        }
+
         User::create($validatedData);
 
         // $request->session()->flash('success', 'Registration successfully! Please login');
 
-        return redirect('/login')->with('success', 'Registration successfully! Please login');
+        return redirect('/dashboard/daftaradmin')->with('success', 'Admin baru berhasil ditambahkan');
     }
 }
  

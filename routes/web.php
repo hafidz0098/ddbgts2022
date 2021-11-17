@@ -55,9 +55,6 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
-Route::post('/register', [RegisterController::class, 'store']);
-
 
 Route::get('/daftar', 'DaftarController@index')->middleware('guest');
 Route::post('/daftar', 'DaftarController@store');
@@ -92,6 +89,9 @@ Route::post('/dashboard/tryout', 'EmailController@kirimTryout')->middleware('adm
 Route::put('/dashboard/tryout', 'EmailController@kirimTryout')->middleware('admin');
 
 Route::post('/dashboard/ticketbox', 'TicketboxController@store')->middleware('admin');
+
+Route::get('/dashboard/daftaradmin', [RegisterController::class, 'index'])->middleware('admin');
+Route::post('/dashboard/daftaradmin', [RegisterController::class, 'store'])->middleware('admin');
 
 
 
