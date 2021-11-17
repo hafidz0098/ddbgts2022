@@ -10,7 +10,7 @@
                 {{ session('success') }}
                 </div>
         @endif
-        <form method="POST" action="/dashboard/tryout">
+        <form method="POST" action="/dashboard/email/tryout">
             @method('put')
             @csrf
             <div class="mb-3">

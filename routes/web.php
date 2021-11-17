@@ -80,13 +80,13 @@ Route::resource('/dashboard/peserta-gagal', 'PesertaGagalController')->middlewar
 
 Route::resource('/dashboard/ticketbox', 'TicketboxController')->middleware('admin');
 
-Route::get('/dashboard/webinar', 'EmailController@viewWebinar')->middleware('admin');
-Route::post('/dashboard/webinar', 'EmailController@kirimWebinar')->middleware('admin');
-Route::put('/dashboard/webinar', 'EmailController@kirimWebinar')->middleware('admin');
+Route::get('/dashboard/email/webinar', 'EmailController@viewWebinar')->middleware('admin');
+Route::post('/dashboard/email/webinar', 'EmailController@kirimWebinar')->middleware('admin');
+Route::put('/dashboard/email/webinar', 'EmailController@kirimWebinar')->middleware('admin');
 
-Route::get('/dashboard/tryout', 'EmailController@viewTryout')->middleware('admin');
-Route::post('/dashboard/tryout', 'EmailController@kirimTryout')->middleware('admin');
-Route::put('/dashboard/tryout', 'EmailController@kirimTryout')->middleware('admin');
+Route::get('/dashboard/email/tryout', 'EmailController@viewTryout')->middleware('admin');
+Route::post('/dashboard/email/tryout', 'EmailController@kirimTryout')->middleware('admin');
+Route::put('/dashboard/email/tryout', 'EmailController@kirimTryout')->middleware('admin');
 
 Route::post('/dashboard/ticketbox', 'TicketboxController@store')->middleware('admin');
 

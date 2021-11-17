@@ -57,7 +57,7 @@ class EmailController extends Controller
 
         Mail::to($email->email)->send(new WebinarEMail($peserta, $email));
 
-        return redirect('/dashboard/webinar')->with('success', 'Email webinar berhasil dikirim');
+        return redirect('/dashboard/email/webinar')->with('success', 'Email webinar berhasil dikirim');
     }
 
     public function kirimTryout(Request $request){
@@ -100,6 +100,6 @@ class EmailController extends Controller
 
         Mail::to($email->email)->send(new TryoutEmail($peserta, $email));
 
-        return redirect('/dashboard/tryout')->with('success', 'Email tryout berhasil dikirim');
+        return redirect('/dashboard/email/tryout')->with('success', 'Email tryout berhasil dikirim');
     }
 }

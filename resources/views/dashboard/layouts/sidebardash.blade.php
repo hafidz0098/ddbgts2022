@@ -66,22 +66,24 @@
         </div>
     </li>
 
+    <li class="nav-item {{ Request::is('dashboard/email*') ? 'active' : '' }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-envelope"></i>
+            <span>Kirim Email</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="/dashboard/email/webinar">Webinar</a>
+                <a class="collapse-item" href="/dashboard/email/tryout">Tryout</a>
+            </div>
+        </div>
+    </li>
+
     <li class="nav-item {{ Request::is('dashboard/ticketbox*') ? 'active' : '' }}">
         <a class="nav-link" href="/dashboard/ticketbox">
             <i class="fas fa-ticket-alt"></i>
             <span>Ticket Box</span></a>
-    </li>
-
-    <li class="nav-item {{ Request::is('dashboard/webinar*') ? 'active' : '' }}">
-        <a class="nav-link" href="/dashboard/webinar">
-            <i class="fas fa-bullhorn"></i>
-            <span>Webinar</span></a>
-    </li>
-
-    <li class="nav-item {{ Request::is('dashboard/tryout*') ? 'active' : '' }}">
-        <a class="nav-link" href="/dashboard/tryout">
-            <i class="fas fa-marker"></i>
-            <span>Tryout</span></a>
     </li>
 
     <li class="nav-item {{ Request::is('dashboard/daftaradmin*') ? 'active' : '' }}">
@@ -90,12 +92,9 @@
             <span>Daftar Admin</span></a>
     </li>
    
-
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     @endcan
-
-    
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">

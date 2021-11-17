@@ -64,7 +64,7 @@ class TicketboxController extends Controller
 
         Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2021", "Join Group Whatsapp", "www.youtube.com"));
         // $request->session()->flash('success', 'Registration successfully! Please login');
-        return redirect('/dashboard/ticketbox')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email peserta yang anda daftarkan!');
+        return redirect('/dashboard/email/ticketbox')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email peserta yang anda daftarkan!');
     }
 
     /**
