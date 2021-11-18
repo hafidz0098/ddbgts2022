@@ -23,10 +23,11 @@ class DatabaseSeeder extends Seeder
             'name' => 'Hafidz',
             'username' => 'hafidz_hafidz',
             'email' => 'hafidznak123@gmail.com',
-            'password' => bcrypt('12345')
+            'password' => bcrypt('12345'),
+            'is_admin' => 1
         ]);
 
-        User::factory(3)->create();
+        // User::factory(3)->create();
 
         Category::create([
             'name' => 'Web Programming',
@@ -69,6 +70,6 @@ class DatabaseSeeder extends Seeder
         ]);
         
 
-        Post::factory(20)->create();
+        // Post::factory(20)->create();
     }
 }
