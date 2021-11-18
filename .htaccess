@@ -1,7 +1,6 @@
 ##Force SSL 
 
 #Normal way (in case you need to deploy to NON-heroku)
-RewriteEngine On
 RewriteCond %{HTTPS} !=on
 
 #Heroku way
