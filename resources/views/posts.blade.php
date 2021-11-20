@@ -26,7 +26,7 @@
         <div class="card mb-3">
             @if ($posts[0]->image)
                     <div style="max-height: 350px; overflow:hidden;">
-                        <img src="{{ url("assets/post-image/$post[0]->image") }}" alt="{{ $posts[0]->category->name }}" class="img-fluid">
+                        <img src="{{ url("assets/post-image/$posts[0]->image") }}" alt="{{ $posts[0]->category->name }}" class="img-fluid">
                     </div>
             @else
             <img src="https://source.unsplash.com/1200x400?{{ $posts[0]->category->name }}" class="card-img-top" alt="{{ $posts[0]->category->name }}">
