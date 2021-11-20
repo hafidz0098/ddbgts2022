@@ -23,6 +23,8 @@
                               <th>Nomor WA</th>
                               <th>Asal Sekolah</th>
                               <th>Keminatan</th>
+                              <th>Diverifikasi Oleh</th>
+                              <th>Waktu Verifikasi</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -34,6 +36,8 @@
                               <td>{{ $peserta->nomor_wa }}</td>
                               <td>{{ $peserta->asal_sekolah }}</td>
                               <td>{{ $peserta->rumpun->name }}</td>
+                              <td>{{ $peserta->verified_by }}</td>
+                              <td>{{ $peserta->updated_at }}</td>
                           </tr>  
                         @endforeach
                       </tbody>

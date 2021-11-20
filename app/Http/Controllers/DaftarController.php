@@ -41,8 +41,8 @@ class DaftarController extends Controller
         ]);
 
         $validatedData['bukti_tf'] = $request->file('bukti_tf')->store('bukti-tf');
-
         $peserta = Peserta::create($validatedData);
+        
 
         Mail::to($validatedData['email'])->send(new WelcomeEMail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));
         // $request->session()->flash('success', 'Registration successfully! Please login');
