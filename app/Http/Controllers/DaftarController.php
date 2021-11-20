@@ -7,6 +7,7 @@ use App\Models\Peserta;
 use App\Models\Rumpun;
 use App\Mail\WelcomeEmail;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\File;
 
 class DaftarController extends Controller
 {
@@ -40,8 +41,21 @@ class DaftarController extends Controller
             'bukti_tf.max' => 'Ukuran maksimal adalah 1 Mb'
         ]);
 
-        $validatedData['bukti_tf'] = $request->file('bukti_tf')->store('bukti-tf');
+        // $validatedData['bukti_tf'] = $request->file('bukti_tf')->store('bukti-tf');
+
+        if ($request->hasFile('bukti_tf')) {
+            $fileNameWithExt = $request->file('bukti_tf')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $ext = $request->file('bukti_tf')->getClientOriginalExtension();
+            $fileNameToStore = $fileName . "_" . time() . "." . $ext;
+            $request->file('bukti_tf')->move(public_path('assets/bukti_tf/'), $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+
         $peserta = Peserta::create($validatedData);
+        $peserta->bukti_tf = $fileNameToStore;
+        $peserta->save();
         
 
         Mail::to($validatedData['email'])->send(new WelcomeEMail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));

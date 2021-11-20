@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class DashboardPostController extends Controller
 {
@@ -53,7 +54,12 @@ class DashboardPostController extends Controller
         ]);
 
         if($request->file('image')){
-            $validatedData['image'] = $request->file('image')->store('post-images');
+            // $validatedData['image'] = $request->file('image')->store('post-images');
+            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $ext = $request->file('image')->getClientOriginalExtension();
+            $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
+            $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
         }
 
         $validatedData['user_id'] = auth()->user()->id;
@@ -122,9 +128,13 @@ class DashboardPostController extends Controller
 
         if($request->file('image')){
             if($request->oldImage){
-                Storage::delete($request->oldImage);
+                File::delete(public_path('assets/post-image/').$post->image);
             }
-            $validatedData['image'] = $request->file('image')->store('post-images');
+            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $ext = $request->file('image')->getClientOriginalExtension();
+            $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
+            $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
         }
 
         $validatedData['user_id'] = auth()->user()->id;
@@ -153,7 +163,7 @@ class DashboardPostController extends Controller
         }
 
         if($post->image){
-            Storage::delete($post->image);
+            File::delete(public_path('assets/post-image/').$post->image);
         }
 
         Post::destroy($post->id);
