@@ -15,15 +15,20 @@ class DashboardController extends Controller
     public function index()
     {
         $pendaftar_total = Peserta::all()->count();
-        $peserta_pending = Peserta::where('status_id', '1')->count();
-        $peserta_sukses = Peserta::where('status_id', '2')->count();
-        $peserta_gagal = Peserta::where('status_id', '3')->count();
+        $peserta_pending = Peserta::where('status_id', 1)->count();
+        $peserta_sukses = Peserta::where('status_id', 2)->count();
+        $peserta_gagal = Peserta::where('status_id', 3)->count();
+        $saintek_sukses = Peserta::where('rumpun_id', 1)->where('status_id', 2)->count();
+        $soshum_sukses = Peserta::where('rumpun_id', 2)->where('status_id', 2)->count();
 
         return view('dashboard.index', [
             'view_pendaftar_total' => $pendaftar_total,
             'view_peserta_pending' => $peserta_pending,
             'view_peserta_sukses' => $peserta_sukses,
-            'view_peserta_gagal' => $peserta_gagal
+            'view_peserta_gagal' => $peserta_gagal,
+            'view_saintek_sukses' => $saintek_sukses,
+            'view_soshum_sukses' => $soshum_sukses
+
         ]);
     }
 

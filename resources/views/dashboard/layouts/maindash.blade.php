@@ -21,6 +21,11 @@
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
     <!-- trix editor -->
     <link rel="stylesheet" type="text/css" href="/css/trix.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script type="text/javascript" src="/js/trix.js"></script>
     <style>
       trix-toolbar [data-trix-button-group="file-tools"]{
