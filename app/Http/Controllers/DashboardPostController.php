@@ -54,12 +54,12 @@ class DashboardPostController extends Controller
         ]);
 
         if($request->file('image')){
-            // $validatedData['image'] = $request->file('image')->store('post-images');
-            $fileNameWithExt = $request->file('image')->getClientOriginalName();
-            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            $ext = $request->file('image')->getClientOriginalExtension();
-            $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
-            $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
+            $validatedData['image'] = $request->file('image')->store('post-images');
+            // $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            // $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            // $ext = $request->file('image')->getClientOriginalExtension();
+            // $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
+            // $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
         }
 
         $validatedData['user_id'] = auth()->user()->id;
@@ -130,11 +130,13 @@ class DashboardPostController extends Controller
             if($request->oldImage){
                 File::delete(public_path('assets/post-image/').$post->image);
             }
-            $fileNameWithExt = $request->file('image')->getClientOriginalName();
-            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            $ext = $request->file('image')->getClientOriginalExtension();
-            $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
-            $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
+            // $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            // $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            // $ext = $request->file('image')->getClientOriginalExtension();
+            // $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
+            // $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
+
+            $validatedData['image'] = $request->file('post-image')->store('image');
         }
 
         $validatedData['user_id'] = auth()->user()->id;
@@ -163,7 +165,8 @@ class DashboardPostController extends Controller
         }
 
         if($post->image){
-            File::delete(public_path('assets/post-image/').$post->image);
+            // File::delete(public_path('assets/post-image/').$post->image);
+            Storage::delete($post->image);
         }
 
         Post::destroy($post->id);

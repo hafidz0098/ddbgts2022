@@ -77,7 +77,7 @@
                             <tr>
                               <td style="width: 138px;">
                                 <a href="#" target="_blank" rel="noopener">
-                                  <img style="border: none; outline: none; text-decoration: none; width: 78px; height: 74px; display: block; margin-left: auto; margin-right: auto;" title="" src="https://i.ibb.co/6Yj1hMF/50778727273-eeb43e1157-c-removebg-preview.png" alt="" width="138" height="38px">
+                                  <img style="border: none; outline: none; text-decoration: none; width: 78px; height: 74px; display: block; margin-left: auto; margin-right: auto;" title="" src="https://i.ibb.co/DLxQ5wZ/LOGO-FIX-1.png" alt="" width="138" height="38px">
                                 </a>
                               </td>
                             </tr>
