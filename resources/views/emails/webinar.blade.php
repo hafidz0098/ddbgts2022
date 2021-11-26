@@ -43,7 +43,7 @@
         text-decoration:underline;
       }</style>
   <div>
-    <div style="background-color: #f9f9f9;">
+    <div style="background-color: #11052C;">
       <div style="margin: 0px auto; max-width: 640px; background: transparent;">
         <table style="font-size: 0px; width: 100%; background: transparent;" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
           <tbody>
@@ -60,7 +60,7 @@
                               <tr>
                                 <td style="width: 138px;">
                                   <a href="#" target="_blank" rel="noopener">
-                                    <img style="border: none; outline: none; text-decoration: none; width: 78px; height: 74px; display: block; margin-left: auto; margin-right: auto;" title="" src="https://i.ibb.co/6Yj1hMF/50778727273-eeb43e1157-c-removebg-preview.png" alt="" width="138" height="38px">
+                                    <img style="border: none; outline: none; text-decoration: none; width: 78px; height: 74px; display: block; margin-left: auto; margin-right: auto;" title="" src="https://i.ibb.co/gJH2Jhf/LOGO1-2-zzzzx.png" alt="" width="138" height="60px">
                                   </a>
                                 </td>
                               </tr>
