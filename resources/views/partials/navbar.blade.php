@@ -5,43 +5,20 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link {{ ($active === "home" ) ? 'active' : '' }}" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ ($active === "about" ) ? 'active' : '' }}" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ ($active === "posts" ) ? 'active' : '' }}" href="/posts">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ ($active === "categories" ) ? 'active' : '' }}" href="/categories">Categories</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-                @auth
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Welcome Back, {{ auth()->user()->name }}</a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-sidebar"></i> My Dashboard</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <form action="/logout" method="POST">
-                                @csrf
-                                <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-in-right">
-                                </i> Logout</a></button>
-                            </form> 
-                        </li>
-                        </ul>
-                    </li>
-                @else
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/daftar" class="nav-link {{ ($active === "daftar" ) ? 'active' : '' }}"><i class="bi bi-box-arrow-in-right"></i> Daftar</a>
+                    <a class="nav-link {{ ($active === "home" ) ? 'active' : '' }}" href="/">Home</a>
                 </li>
-                @endauth
-        </ul>
-        
+                <li class="nav-item">
+                    <a class="nav-link {{ ($active === "about" ) ? 'active' : '' }}" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ ($active === "posts" ) ? 'active' : '' }}" href="/posts">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ ($active === "categories" ) ? 'active' : '' }}" href="/categories">Categories</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
