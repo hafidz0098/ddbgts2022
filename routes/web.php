@@ -49,6 +49,12 @@ Route::get('/categories', function () {
     ]);
 });
 
+
+Route::group(['middleware' => 'revalidate'], function()
+{
+ 
+Auth::routes();
+
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -93,5 +99,6 @@ Route::post('/dashboard/ticketbox', 'TicketboxController@store')->middleware('ad
 Route::get('/dashboard/daftaradmin', [RegisterController::class, 'index'])->middleware('admin');
 Route::post('/dashboard/daftaradmin', [RegisterController::class, 'store'])->middleware('admin');
 
+});
 
 
