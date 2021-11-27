@@ -59,7 +59,7 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/daftar', 'DaftarController@index')->middleware('guest');
 Route::post('/daftar', 'DaftarController@store');
 
-Route::get('/email', 'EmailController@index');
+// Route::get('/email', 'EmailController@index');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth');
 
