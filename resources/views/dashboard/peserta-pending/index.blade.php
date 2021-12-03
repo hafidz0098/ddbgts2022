@@ -37,7 +37,7 @@
                               <td>{{ $peserta->nomor_wa }}</td>
                               <td>{{ $peserta->asal_sekolah }}</td>
                               <td>{{ $peserta->rumpun->name }}</td>
-                              <td><img src="{{ asset('storage/'.$peserta->bukti_tf)}}" onclick="window.open('{{asset('storage/'.$peserta->bukti_tf)}}')" width="80" height="80"></td>
+                              <td><img src="{{ $peserta->bukti_tf}}" onclick="window.open('{{ $peserta->bukti_tf }}')" width="80" height="80"></td>
                               <td>
                                 <form method="post" action="/dashboard/peserta-pending/{{ $peserta->id }}">
                                   @method('put')

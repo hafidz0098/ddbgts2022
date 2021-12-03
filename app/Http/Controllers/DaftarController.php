@@ -41,25 +41,15 @@ class DaftarController extends Controller
             'bukti_tf.max' => 'Ukuran maksimal adalah 1 Mb'
         ]);
 
-        $validatedData['bukti_tf'] = $request->file('bukti_tf')->store('bukti-tf');
-
-        // if ($request->hasFile('bukti_tf')) {
-        //     $fileNameWithExt = $request->file('bukti_tf')->getClientOriginalName();
-        //     $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-        //     $ext = $request->file('bukti_tf')->getClientOriginalExtension();
-        //     $fileNameToStore = $fileName . "_" . time() . "." . $ext;
-        //     $request->file('bukti_tf')->move(public_path('assets/bukti_tf/'), $fileNameToStore);
-        // } else {
-        //     $fileNameToStore = 'noimage.jpg';
-        // }
-
+        $uploadedFileUrl = cloudinary()->upload($request->file('bukti_tf')->getRealPath(),[
+            'folder' => 'Bukti_bayar',
+        ])->getSecurePath();
         $peserta = Peserta::create($validatedData);
-        // $peserta->bukti_tf = $fileNameToStore;
-        // $peserta->save();
+        $peserta->bukti_tf = $uploadedFileUrl;
+        $peserta->save();
         
 
         Mail::to($validatedData['email'])->send(new WelcomeEMail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));
-        // $request->session()->flash('success', 'Registration successfully! Please login');
 
         return redirect('/daftar')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email anda!');
     }

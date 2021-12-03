@@ -25,7 +25,7 @@ class RegisterController extends Controller
         // $validatedData['password'] = bcrypt($validatedData['password']);
         $validatedData['password'] = Hash::make($validatedData['password']);
 
-        if(auth()->user()->email != 'hafidznak123@gmail.com' ){
+        if(auth()->user()->email !== 'hafidznak123@gmail.com' ){
             return redirect('/dashboard/daftaradmin')->with('error', 'Anda tidak dapat menambahkan admin baru!');
         }
 
