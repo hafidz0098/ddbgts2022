@@ -27,6 +27,7 @@ class CreatePesertasTable extends Migration
             $table->string('verified_by')->nullable();
             $table->boolean('send_webinar')->default(false);
             $table->boolean('send_tryout')->default(false);
+            $table->string('image_id')->nullable();
             $table->timestamps();
         });
     }

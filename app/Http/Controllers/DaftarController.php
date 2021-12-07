@@ -8,6 +8,7 @@ use App\Models\Rumpun;
 use App\Mail\WelcomeEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class DaftarController extends Controller
 {
@@ -41,11 +42,13 @@ class DaftarController extends Controller
             'bukti_tf.max' => 'Ukuran maksimal adalah 1 Mb'
         ]);
 
-        $uploadedFileUrl = cloudinary()->upload($request->file('bukti_tf')->getRealPath(),[
-            'folder' => 'Bukti_bayar',
-        ])->getSecurePath();
+        $path = $request->file('bukti_tf')->store('bukti_tf', 's3');
+
+        $path = Storage::disk('s3')->url($path);
+        
         $peserta = Peserta::create($validatedData);
-        $peserta->bukti_tf = $uploadedFileUrl;
+        $peserta->image_id = basename($path);
+        $peserta->bukti_tf = $path;
         $peserta->save();
         
 

@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\KonfirmasiEmail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
+use CloudinaryLabs\CloudinaryLaravel\MediaAlly;
 
 
 class PesertaController extends Controller
@@ -95,8 +96,7 @@ class PesertaController extends Controller
         $peserta->update($validatedData);
 
         if($validatedData['status_id'] == 2){
-            // File::delete(public_path('assets/bukti_tf/').$peserta->bukti_tf);
-            Storage::delete($peserta->bukti_tf);
+            Storage::disk('s3')->delete('bukti_tf/'.$peserta->image_id); 
             Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2022", "Join Group Whatsapp", "www.youtube.com"));
         }else{
             Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Gagal", "Mohon maaf, pendaftaran Anda belum berhasil dilakukan. Mohon melakukan pendaftaran ulang", "Daftar Ulang", "www.twitter.com"));

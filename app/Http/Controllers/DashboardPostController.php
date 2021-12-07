@@ -54,16 +54,15 @@ class DashboardPostController extends Controller
         ]);
 
         if($request->file('image')){
-            $validatedData['image'] = $request->file('image')->store('post-images');
-            // $fileNameWithExt = $request->file('image')->getClientOriginalName();
-            // $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            // $ext = $request->file('image')->getClientOriginalExtension();
-            // $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
-            // $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
+            $path = $request->file('image')->store('post_image', 's3');
         }
 
         $validatedData['user_id'] = auth()->user()->id;
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+        $path = Storage::disk('s3')->url($path);
+
+        $validatedData['image'] = $path;
+        $validatedData['image_id'] = basename($path);
 
         Post::create($validatedData);
 
@@ -128,19 +127,18 @@ class DashboardPostController extends Controller
 
         if($request->file('image')){
             if($request->oldImage){
-                File::delete(public_path('assets/post-image/').$post->image);
+                Storage::disk('s3')->delete('post_image/'.$post->image_id); 
             }
-            // $fileNameWithExt = $request->file('image')->getClientOriginalName();
-            // $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            // $ext = $request->file('image')->getClientOriginalExtension();
-            // $validatedData['image'] = $fileName . "_" . time() . "." . $ext;
-            // $request->file('image')->move(public_path('assets/post-image/'), $validatedData['image']);
 
-            $validatedData['image'] = $request->file('post-image')->store('image');
+            $path = $request->file('image')->store('post_image', 's3');
         }
 
         $validatedData['user_id'] = auth()->user()->id;
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+        $path = Storage::disk('s3')->url($path);
+
+        $validatedData['image'] = $path;
+        $validatedData['image_id'] = basename($path);
 
         if($post->author->id !== auth()->user()->id) {
             abort(403);
@@ -165,8 +163,7 @@ class DashboardPostController extends Controller
         }
 
         if($post->image){
-            // File::delete(public_path('assets/post-image/').$post->image);
-            Storage::delete($post->image);
+            Storage::disk('s3')->delete('post_image/'.$post->image_id); 
         }
 
         Post::destroy($post->id);
