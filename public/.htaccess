@@ -4,6 +4,10 @@
     </IfModule>
 
     RewriteEngine On
+
+    #Heroku way
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+
     
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
