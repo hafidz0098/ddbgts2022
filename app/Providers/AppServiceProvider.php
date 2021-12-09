@@ -25,7 +25,9 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
+
+    {   
+        URL::forceScheme('https');
         Paginator::useBootstrap();
 
         Gate::define('admin', function(User $user){
