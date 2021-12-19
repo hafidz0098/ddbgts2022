@@ -18,6 +18,8 @@ class CreateEmailsTable extends Migration
             $table->string('email');
             $table->string('username_to')->nullable();
             $table->string('password_to')->nullable();
+            $table->string('username_tm')->nullable();
+            $table->string('password_tm')->nullable();
             $table->string('subject');
             $table->string('pesan');
             $table->string('nama_acara');

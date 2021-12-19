@@ -19,6 +19,8 @@ class CreatePesertasTable extends Migration
             $table->string('email')->unique();
             $table->string('username_to')->nullable();
             $table->string('password_to')->nullable();
+            $table->string('username_tm')->nullable();
+            $table->string('password_tm')->nullable();
             $table->string('nomor_wa')->unique();
             $table->string('asal_sekolah');
             $table->foreignId('rumpun_id');
@@ -27,6 +29,7 @@ class CreatePesertasTable extends Migration
             $table->string('verified_by')->nullable();
             $table->boolean('send_webinar')->default(false);
             $table->boolean('send_tryout')->default(false);
+            $table->boolean('send_tm')->default(false);
             $table->string('image_id')->nullable();
             $table->timestamps();
         });

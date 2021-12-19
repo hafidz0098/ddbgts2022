@@ -8,6 +8,7 @@ use App\Models\Peserta;
 use App\Models\Email;
 use App\Mail\WebinarEmail;
 use App\Mail\TryoutEmail;
+use App\Mail\TalentsmappingEmail;
 
 class EmailController extends Controller
 {
@@ -20,6 +21,12 @@ class EmailController extends Controller
     public function viewTryout(){
         return view('dashboard.tryout.index', [
             'pesertas' => Peserta::where('status_id', '2')->where('send_tryout', 0)->get()
+        ]);
+    }
+
+    public function viewtm(){
+        return view('dashboard.talentsmapping.index', [
+            'pesertas' => Peserta::where('status_id', '2')->where('send_tm', 0)->get()
         ]);
     }
 
@@ -108,4 +115,52 @@ class EmailController extends Controller
         }
         
     }
+
+    public function kirimtm(Request $request){
+        $email = new Email;
+        $peserta = Peserta::where('email', $request->input('email'))->first();
+
+        $validatedData = $request->validate([
+            'email' => 'required',
+            'subject' => 'required',
+            'username_tm' => 'required',
+            'password_tm' => 'required',
+            'pesan' => 'required',
+            'nama_acara' => 'required',
+            'tanggal' => 'required',
+            'lokasi' => 'required',
+            'meeting_id' => 'required',
+            'meeting_passcode' => 'required',
+            'link_zoom' => 'required'
+        ]);
+
+        $email->email = $request->input('email');
+        $email->subject = $request->input('subject');
+        $email->username_tm = $request->input('username_tm');
+        $email->password_tm = $request->input('password_tm');
+        $email->pesan = $request->input('pesan');
+        $email->nama_acara = $request->input('nama_acara');
+        $email->tanggal = $request->input('tanggal');
+        $email->jam = $request->input('jam');
+        $email->lokasi = $request->input('lokasi');
+        $email->meeting_id = $request->input('meeting_id');
+        $email->meeting_passcode = $request->input('meeting_passcode');
+        $email->link_zoom = $request->input('link_zoom');
+        $email->sent_by = auth()->user()->name;
+        
+        if($peserta->send_tm == 1){
+            return redirect('/dashboard/email/talentsmapping')->with('error', 'Respon Gagal, Email talents mapping telah dikirim sebelumnya');
+        }else{
+            $email->save();
+            $peserta->send_tm = 1;
+            $peserta->username_tm = $request->input('username_tm');
+            $peserta->password_tm = $request->input('password_tm');
+            $peserta->save();
+            Mail::to($email->email)->send(new TalentsmappingEmail($peserta, $email));
+            return redirect('/dashboard/email/talentsmapping')->with('success', 'Email talents mapping berhasil dikirim');
+        }
+        
+    }
+
+    
 }

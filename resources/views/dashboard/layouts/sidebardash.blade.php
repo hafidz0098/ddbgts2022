@@ -74,8 +74,9 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="/dashboard/email/webinar">Webinar</a>
+                <a class="collapse-item" href="/dashboard/email/webinar">Talk Show</a>
                 <a class="collapse-item" href="/dashboard/email/tryout">Tryout</a>
+                <a class="collapse-item" href="/dashboard/email/talentsmapping">Talents Mapping</a>
             </div>
         </div>
     </li>

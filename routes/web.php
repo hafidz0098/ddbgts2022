@@ -9,7 +9,6 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\EmailController;
-use App\Http\Controllers\SendMailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,6 +88,10 @@ Route::resource('/dashboard/ticketbox', 'TicketboxController')->middleware('admi
 Route::get('/dashboard/email/webinar', 'EmailController@viewWebinar')->middleware('admin');
 Route::post('/dashboard/email/webinar', 'EmailController@kirimWebinar')->middleware('admin');
 Route::put('/dashboard/email/webinar', 'EmailController@kirimWebinar')->middleware('admin');
+
+Route::get('/dashboard/email/talentsmapping', 'EmailController@viewtm')->middleware('admin');
+Route::post('/dashboard/email/talentsmapping', 'EmailController@kirimtm')->middleware('admin');
+Route::put('/dashboard/email/talentsmapping', 'EmailController@kirimtm')->middleware('admin');
 
 Route::get('/dashboard/email/tryout', 'EmailController@viewTryout')->middleware('admin');
 Route::post('/dashboard/email/tryout', 'EmailController@kirimTryout')->middleware('admin');

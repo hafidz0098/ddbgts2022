@@ -1,7 +1,7 @@
 @extends('dashboard.layouts.maindash')
 @section('content')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Kirim Talkshow</h1>
+    <h1 class="h2">Kirim Talents Mapping</h1>
 </div>
 <div class="row">
     <div class="col-lg-8">
@@ -15,7 +15,7 @@
                 {{ session('error') }}
                 </div>
         @endif
-        <form method="POST" action="/dashboard/email/webinar">
+        <form method="POST" action="/dashboard/email/talentsmapping">
             @method('put')
             @csrf
             <div class="mb-3">
@@ -33,7 +33,7 @@
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control @error('subject') is-invalid @enderror" id="subject" name="subject" placeholder="Masukkan subject..." autofocus value="Webinar DDBGTS 2022" >
+              <input type="text" class="form-control @error('subject') is-invalid @enderror" id="subject" name="subject" placeholder="Masukkan subject..." autofocus value="Talents Mapping DDBGTS 2022" >
                 @error('subject')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -41,8 +41,26 @@
                 @enderror
             </div>
             <div class="mb-3">
+                <label for="username_to" class="form-label">Username Talents Mapping</label>
+                <input type="text" class="form-control @error('username_tm') is-invalid @enderror" id="username_tm" name="username_tm" placeholder="Masukkan username TM..." autofocus >
+                  @error('username_tm')
+                      <div class="invalid-feedback">
+                          {{ $message }}
+                      </div>
+                  @enderror
+            </div>
+            <div class="mb-3">
+                <label for="password_to" class="form-label">Password Talents Mapping</label>
+                <input type="text" class="form-control @error('password_tm') is-invalid @enderror" id="password_tm" name="password_tm" placeholder="Masukkan password TM..." autofocus >
+                  @error('password_tm')
+                      <div class="invalid-feedback">
+                          {{ $message }}
+                      </div>
+                  @enderror
+            </div>
+            <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <input type="text" class="form-control @error('pesan') is-invalid @enderror" id="pesan" name="pesan" placeholder="Masukkan pesan..." autofocus value="Halo, Kami mengundang anda untuk mengikuti webinar DDBGTS 2022" >
+                <input type="text" class="form-control @error('pesan') is-invalid @enderror" id="pesan" name="pesan" placeholder="Masukkan pesan..." autofocus value="Halo, Kami mengundang anda untuk mengikuti Talents Mapping DDBGTS 2022" >
                   @error('pesan')
                       <div class="invalid-feedback">
                           {{ $message }}
@@ -51,7 +69,7 @@
             </div>
             <div class="mb-3">
                 <label for="nama_acara" class="form-label">Nama Acara</label>
-                <input type="text" class="form-control @error('nama_acara') is-invalid @enderror" id="nama_acara" name="nama_acara" placeholder="Masukkan nama acara" autofocus value="Webinar DDBGTS 2022" >
+                <input type="text" class="form-control @error('nama_acara') is-invalid @enderror" id="nama_acara" name="nama_acara" placeholder="Masukkan nama acara" autofocus value="Talents Mapping DDBGTS 2022" >
                 @error('nama_acara')
                     <div class="invalid-feedback">
                         {{ $message }}
