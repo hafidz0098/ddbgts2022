@@ -22,9 +22,9 @@ use App\Http\Controllers\EmailController;
 */
 
 Route::get('/', function () {
-    return view ('home', [
-        "title" => "Home",
-        'active' => 'home',
+    return view ('coming', [
+        "title" => "Coming",
+        'active' => 'coming',
     ]);
 });
 
@@ -48,6 +48,8 @@ Route::get('/categories', function () {
     ]);
 });
 
+Route::get('/exportpeserta', 'PesertaController@pesertaexport')->name('exportpeserta')->middleware('auth'); 
+
 
 Route::group(['middleware' => 'revalidate'], function()
 {
@@ -67,8 +69,6 @@ Route::post('/daftar', 'DaftarController@store');
 // Route::get('/email', 'EmailController@index');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth');
-
-Route::get('/exportpeserta', 'PesertaController@pesertaexport')->name('exportpeserta')->middleware('auth'); 
 
 Route::get('/dashboard/posts/checkSlug', 'DashboardPostController@checkSlug')->middleware('auth');
 Route::get('/dashboard/categories/checkSlug', [AdminCategoryController::class , 'checkSlug'])->middleware('auth');
