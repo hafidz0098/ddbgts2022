@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Peserta;
 use App\Models\Rumpun;
 use App\Mail\WelcomeEmail;
+use App\Mail\NotifEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -52,8 +53,8 @@ class DaftarController extends Controller
         $peserta->save();
         
 
-        Mail::to($validatedData['email'])->send(new WelcomeEMail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));
-
+        Mail::to($validatedData['email'])->send(new WelcomeEmail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));
+        Mail::to("ddbgts2022.2@gmail.com")->send(new NotifEmail("Notifikasi Pendaftar Baru", "Halo admin, ada pendaftar baru nih silahkan segera cek website"));
         return redirect('/daftar')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email anda!');
     }
 }

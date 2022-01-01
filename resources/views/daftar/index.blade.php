@@ -76,7 +76,7 @@
                         @enderror
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Daftar</button>
+                    <button type="submit" class="btn btn-primary" onclick="return confirm('Yakin daftar? Pastikan semua data yang diinput sudah sesuai')">Daftar</button>
                 </form>
             </div>
         </div>

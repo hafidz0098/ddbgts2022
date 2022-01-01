@@ -85,7 +85,7 @@
 
   <!--Tentang ddbgts-->
 
-    <section id="tentang-ddbgts" class="tentang-ddbgts section-bg">
+    <section id="tentang-ddbgts" class="tentang-ddbgts section-bg-cust">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -98,7 +98,7 @@
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="flip-left" data-aos-delay="100">
+            <div class="icon-box phone" data-aos="flip-left" data-aos-delay="100">
               <h4 class="title mt-3">TRYOUT UTBK</h4>
               <p class="description"">Persiapan untuk kamu menghadapi UTBK, dengan akurasi soal mengacu pada pelaksanaan tahun-tahun sebelumnya, UTBK? Siapa Takut!</p>
             </div>
@@ -112,7 +112,7 @@
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="flip-left" data-aos-delay="300">
+            <div class="icon-box phone" data-aos="flip-left" data-aos-delay="300">
               <h4 class="title mt-3">TALENTS MAPPING</h4>
               <p class="description"> 2022 waktunya mencari tau potensi diri melalui Talents Mapping kamu akan menemukan potensi dirimu yang sebenarnya</p>
             </div>
@@ -139,12 +139,12 @@
             <div class="flip-card" style="border-radius: 2px;">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="frontend/assets/img/ddb1.webp" alt="Avatar" style="width:100%;height:250px; border-top-left-radius: 20px; border-top-right-radius: 20px; " class="mb-1">
+                  <img src="frontend/assets/img/ddbgtstalk.webp" alt="ddbgtstalk" style="width:100%;height:250px; border-top-left-radius: 20px; border-top-right-radius: 20px; " class="mb-1">
                   <h4 class="mt-4">DDBGTS TALK</h4>
                 </div>
                 <div class="flip-card-back">
                   <h4 class="title mt-3">DDBGTS TALK</h4>
-                  <p class="justify-content-center align-items-center mt-4">DDBGTS Talk adalah salah satu kegiatan dari DDBGTS 2021 bersama beberapa sekolah, forum anak Sulawesi Selatan, dan beberapa komunitas pendidikan lainnya melalui live Instagram. Kegiatan ini bertujuan untuk mengetahui seluk beluk siswa-siswi SMA sebelum memasuki jenjang perkuliahan. 
+                  <p class="justify-content-center align-items-center mt-4">DDBGTS Talk adalah salah satu kegiatan dari DDBGTS 2022 bersama beberapa sekolah yang berada di Sulawesi Selatan. Kegiatan ini bertujuan untuk mengetahui seluk beluk siswa-siswi SMA sebelum memasuki jenjang perkuliahan. 
                     Selain itu, kegiatan ini juga bertujuan untuk menyampakan informasi mengenai dunia perkuliahan secara umum.</p>
                 </div>
               </div>
@@ -154,12 +154,13 @@
             <div class="flip-card" style="border-radius: 2px;">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="frontend/assets/img/sosialisasi.webp" alt="Avatar" style="width:100%;height:250px; border-top-left-radius: 20px; border-top-right-radius: 20px;" class="mb-1">
+                  <img src="frontend/assets/img/sosialisasi.webp" alt="sosialisasi" style="width:100%;height:250px; border-top-left-radius: 20px; border-top-right-radius: 20px;" class="mb-1">
                   <h4 class="mt-4">SOSIALISASI</h4>
                 </div>
                 <div class="flip-card-back">
                   <h4 class="mt-3">SOSIALISASI</h4>
-                  <p class="justify-content-center align-items-center mt-4">Sosialisasi berupa kunjungan ke sekolah-sekolah yang ada di Sulawesi Selatan. Sosialisasi bertujuan untuk memperkenalkan kehidupan kampus Universitas Brawijaya kepada siswa kelas 12 dan tentunya masa banyak hal menarik lainnya.</p>
+                  <p class="justify-content-center align-items-center mt-4">Sosialisasi berupa kunjungan ke sekolah-sekolah yang ada di Sulawesi Selatan. Sosialisasi bertujuan untuk memperkenalkan kehidupan kampus Universitas Brawijaya kepada siswa kelas 12 dan juga memperkenalkan ddbgts 
+                    kepada siswa-siswi kelas 12 sebagai ajang mempersiapkan dalam UTBK nantinya dan tentunya masa banyak hal menarik lainnya.</p>
                 </div>
               </div>
             </div>
@@ -168,12 +169,12 @@
             <div class="flip-card" style="border-radius: 2px;">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="frontend/assets/img/acara_puncak.webp" alt="Avatar" style="width:100%;height:250px; border-top-left-radius: 20px; border-top-right-radius: 20px; " class="mb-1">
+                  <img src="frontend/assets/img/acara_puncak.webp" alt="acarapuncak" style="width:100%;height:250px; border-top-left-radius: 20px; border-top-right-radius: 20px; " class="mb-1">
                   <h4 class="mt-4">ACARA PUNCAK</h4>
                 </div>
                 <div class="flip-card-back">
                   <h4 class="mt-3">ACARA PUNCAK</h4>
-                  <p class="justify-content-center align-items-center mt-4">Acara ini mengusung tema "Langkah Awal Menuju Masa Depan Cemerlang (La Macca')" dengan menghadirkan pemateri-pemateri yang berkualitas, baik secara akademik maupun pengalaman. Selain itu, terdapat tips and trick sebagai persiapan adik-adik untuk mengikuti SNMPTN atau SBMPTN, Tryout UTBK, Talents Mapping dan masih banyak lainnya.</p>
+                  <p class="justify-content-center align-items-center mt-4">Acara ini berlangsung pada tanggal 22-23 Januari 2022 dengan menghadirkan pemateri-pemateri yang berkualitas, baik secara akademik maupun pengalaman. Selain itu, terdapat tips and trick sebagai persiapan adik-adik untuk mengikuti SNMPTN atau SBMPTN, Tryout UTBK, Talents Mapping dan masih banyak lainnya.</p>
                 </div>
               </div>
             </div>
@@ -267,7 +268,7 @@
                           Pembayaran dapat dilakukan dengan transfer sebesar Rp 25.000,- ke salah satu rekening di bawah ini: <br>
                           • BNI 1193024137 a/n <strong>Nurhafidah</strong> <br>
                           • DANA 082335319820 a/n <strong>Serlinda</strong> <br>
-                          • OVO 082335319820 <strong>Serlinda</strong>
+                          • OVO 082335319820 a/n <strong>Serlinda</strong>
                     </p>
                   </div>
                 </li>
@@ -339,15 +340,15 @@
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/nutrifood.webp" class="img-fluid" alt="logo nutrifood">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
           <img src="frontend/assets/img/clients/alokka.webp" class = "img-fluid" alt="logo pajokka" style="width: 80px;">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
           <img src="frontend/assets/img/clients/eduevent.webp" class="img-fluid" alt="logo edu event">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="frontend/assets/img/clients/info-lutra.webp" class="img-fluid" alt="logo info lutra" width="60px">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -361,6 +362,35 @@
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
           <img src="frontend/assets/img/clients/sahabatevent.webp" class="img-fluid" alt="logo sahabat event">
         </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/berita_kota.webp" class="img-fluid" alt="logo berita kota">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/info_event.webp" class="img-fluid" alt="logo info event">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/bone_media.webp" class="img-fluid" alt="logo berita kota" width="60px">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/eventcampus.webp" class="img-fluid" alt="logo event campus" width="60px">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/event_kampus.webp" class="img-fluid" alt="logo event kampus" width="60px">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/info-lutra.webp" class="img-fluid" alt="logo info lutra" width="60px">
+        </div>
+
+
+        
+
+        
 
       </div>
 

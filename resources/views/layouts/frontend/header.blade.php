@@ -9,6 +9,10 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta content="DDBGTS merupakan event yang dilaksanakan rutin tiap tahun oleh Dara Daeng Brawijaya untuk mensosialisasikan Universitas Brawijaya ke sekolah-sekolah menengah atas yang ada di Sulawesi selatan" name="description">
   <meta content="DDBGTS" name="keywords">
+  <meta content="DDB" name="keywords">
+  <meta content="Tryout UTBK" name="keywords">
+  <meta content="SNMPTN" name="keywords">
+  <meta content="SBMPTN" name="keywords">
 
   <!-- Favicons -->
   <link href="/frontend/assets/img/logo2.webp" rel="icon">
@@ -23,6 +27,16 @@
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
   <link href="/frontend/assets/css/style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0RGLSYSZ0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F0RGLSYSZ0');
+  </script>
 
 </head>
 
@@ -55,13 +69,16 @@
 
     <div class="container footer-bottom clearfix">
       <h3 class="text-center">Visit Our Social Media</h3>
-      <div class=" mt-3 text-center">
-        <a href="https://www.instagram.com/ddbgts/"><span class="iconify" data-icon="uil:line" style="color: #fff;" data-width="30" data-height="30"></span></a>
-        <a href="https://www.instagram.com/ddbgts/"><span class="iconify" data-icon="uil:instagram" style="color: #fff;" data-width="30" data-height="30"></span></a>
-        <a href="https://www.instagram.com/ddbgts/"><span class="iconify" data-icon="simple-icons:tiktok" style="color: #fff;" data-width="25" data-height="25"></span></a>
+      <div class=" mt-3 text-center sosial-media">
+        <a href="https://www.instagram.com/ddbgts/" target="_blank"><span class="iconify" data-icon="uil:line" style="color: #fff;" data-width="30" data-height="30"></span></a>
+        <a href="https://www.instagram.com/ddbgts/" target="_blank"><span class="iconify" data-icon="uil:instagram" style="color: #fff;" data-width="30" data-height="30"></span></a>
+        <a href="https://www.tiktok.com/@ddbgts" target="_blank"><span class="iconify" data-icon="simple-icons:tiktok" style="color: #fff;" data-width="25" data-height="25"></span></a>
       </div>
       <div class="copyright mt-3">
         Developed by PIT DDBGTS 2022
+      </div>
+      <div class="copyright mt-2">
+        © 2021 All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->

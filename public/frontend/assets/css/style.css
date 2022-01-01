@@ -9,12 +9,12 @@ body {
 }
 
 a {
-  color: #47b2e4;
+  color: #F43B86;
   text-decoration: none;
 }
 
 a:hover {
-  color: #73c5eb;
+  color: #F43B86;
   text-decoration: none;
 }
 
@@ -22,36 +22,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Inter", sans-serif;
 }
 
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #47b2e4;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.back-to-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background: #6bc1e9;
-  color: #fff;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -162,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #F43B86;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -249,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #37517e;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #47b2e4;
+  color: #F43B86;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -297,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -417,6 +387,11 @@ section {
   background-repeat: repeat;
 }
 
+.section-bg-rangkaian-acara{
+  background-image: url("../img/rangkaian-acara.webp");
+  background-repeat: repeat;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -446,7 +421,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  background: #F43B86;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -1332,7 +1307,7 @@ section {
 
 }
 .blog .blog-heading span{
-  color: #f33c3c;
+  color: black;
 }
 .blog .blog-heading h3{
   font-size: 2.4rem;
@@ -1343,17 +1318,20 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 90px 0px;
+  margin: 20px 0;
   flex-wrap: wrap;
+}
+
+.blog .pd-90{
+  padding-top: 90px;
 }
 
 .blog .blog-box{
   width:350px;
-  background-color: #ffffff;
+  background: linear-gradient(0deg, rgba(68,29,112,1) 34%, rgba(11,5,44,1) 100%);
   border: 1px solid #ececec;
   border-radius: 20px;
   margin: 20px 20px;
-  cursor: pointer;
 
 }
 
@@ -1384,16 +1362,20 @@ section {
   flex-direction: column;
 }
 .blog .blog-text span{
-  color: #f33c3c;
+  color: #fff;
   font-size: 0.9rem;
 }
 .blog .blog-text .blog-title{
   font-size: 1.3rem;
   font-weight: 600;
-  color: #272727;
+  color: #fff;
+}
+
+.blog .blog-text .blog-title:hover{
+  color: #F43B86;
 }
 .blog .blog-text p{
-  color: #9b9b9b;
+  color: #fff;
   font-size: 0.9rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1403,10 +1385,10 @@ section {
   margin: 20px 0px;
 }
 .blog .blog-text a{
-  color: #0f0f0f;
+  color: #fff;
 }
 .blog .blog-text a:hover{
-  color: #c74242;
+  color: #F43B86;
   transition: all ease 0.3s;
 }
 
@@ -1450,9 +1432,9 @@ section {
 
 
 .isi-berita .card {
-  background: rgba(255, 0, 103, 0.5);
-  opacity: 1;
-  border-radius: 20px;
+  background: rgba(255, 0, 103, 0.4);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: white;
 }
 
@@ -1475,6 +1457,11 @@ section {
   padding-bottom: 30px;
   color: #fff;
 }
+
+#footer .footer-bottom .sosial-media a {
+  margin-right: 10px;
+}
+
 #footer .copyright {
   text-align: center;
 }
