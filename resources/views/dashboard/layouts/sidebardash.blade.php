@@ -42,13 +42,6 @@
     <div class="sidebar-heading">
         Admin
     </div>
-    
-
-    <li class="nav-item {{ Request::is('dashboard/categories*') ? 'active' : '' }}">
-        <a class="nav-link" href="/dashboard/categories">
-            <i class="fas fa-border-all"></i>
-            <span>Post Categories</span></a>
-    </li>
 
     <li class="nav-item {{ Request::is('dashboard/peserta*') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"

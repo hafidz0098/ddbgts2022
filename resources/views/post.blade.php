@@ -1,36 +1,27 @@
-@extends('layouts.main')
+@extends('layouts.frontend.header')
 
-@section('container')
+@section('content')
 
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">{{ $post->title }}</h1>
-                    <p>By. 
-                        <a href="/posts?author={{ $post->author->username }}" class="text-decoration-none">{{ $post->author->name }}
-                        </a> in 
-                        <a href="/posts?categories={{ $post->category->slug }}" class="text-decoration-none">{{ $post->category->name }}
-                        </a>
-                    </p>
-
-                    @if ($post->image)
-                    <div style="max-height: 400px; overflow:hidden;">
-                        <img src="{{ $post->image }}" alt="{{ $post->category->name }}" class="img-fluid">
+    <section id="isi-berita" class="isi-berita section-bg">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-md-8">
+                    
+                    <div class="card">
+                        <div style="max-height: 300px; overflow:hidden;"  class="text-center">
+                            <img src="{{ $post->image }}" class="img-fluid">
+                        </div>
+    
+                        <article class="my-3">
+                            <h1 class="mt-3" style="margin-bottom: 20px">{{ $post->title }}</h1>
+                            {!! $post->body !!}
+                        </article>
+                        
                     </div>
-                    @else
-                    <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" alt="{{ $post->category->name }}" class="img-fluid ">
-                    @endif
-
                     
-                    <article class="my-3 fs-5">
-                        {!! $post->body !!}
-                    </article>
-                    
-                     <a href="/posts" class="text-decoration-none d-block mt-3">Back to post</a>
+                </div>
             </div>
         </div>
-    </div>
-    
-
+    </section>
     
 @endsection

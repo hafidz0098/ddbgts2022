@@ -20,7 +20,6 @@
                             <tr>
                                 <th>No</th>
                                 <th>Title</th>
-                                <th>Category</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -29,7 +28,6 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $post->title }}</td>
-                                <td>{{ $post->category->name }}</td>
                                 <td align="center">
                                     <a href="/dashboard/posts/{{ $post->slug }}" class=" btn btn-sm btn-info btn-bordred"><i class="fa fa-eye" title="Show"></i></a>
                                     <a href="/dashboard/posts/{{ $post->slug }}/edit" class=" btn btn-sm btn-warning btn-bordred"><i class="fa fa-edit" title="Edit"></i></a>

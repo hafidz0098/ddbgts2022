@@ -22,31 +22,30 @@ use App\Http\Controllers\EmailController;
 */
 
 Route::get('/', function () {
-    return view ('coming', [
-        "title" => "Coming",
-        'active' => 'coming',
+    return view ('home', [
+        "title" => "DDBGTS 2022",
+        'active' => 'home',
     ]);
 });
 
-Route::get('/about', function () {
-    return view ('about', [
-        "title" => "About",
-        'active' => 'about',
+Route::get('/faq', function () {
+    return view ('faq', [
+        "title" => "FAQ",
+        'active' => 'faq',
+    ]);
+});
+
+Route::get('/cara-pendaftaran', function () {
+    return view ('cara-pendaftaran', [
+        "title" => "Cara Pendaftaran",
+        'active' => 'cara-pendaftaran',
     ]);
 });
 
 
-Route::get('/posts', [PostController::class, 'index']); 
+Route::get('/berita', [PostController::class, 'index']); 
 
-Route::get('/posts/{post:slug}', [PostController::class, 'show']);
-
-Route::get('/categories', function () {
-    return view('categories', [
-        'title' => 'Post Categories',
-        'active' => 'categories',
-        'categories' => Category::all()
-    ]);
-});
+Route::get('/berita/{post:slug}', [PostController::class, 'show']);
 
 Route::get('/exportpeserta', 'PesertaController@pesertaexport')->name('exportpeserta')->middleware('auth'); 
 
@@ -71,11 +70,8 @@ Route::post('/daftar', 'DaftarController@store');
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth');
 
 Route::get('/dashboard/posts/checkSlug', 'DashboardPostController@checkSlug')->middleware('auth');
-Route::get('/dashboard/categories/checkSlug', [AdminCategoryController::class , 'checkSlug'])->middleware('auth');
 
 Route::resource('/dashboard/posts', 'DashboardPostController')->middleware('auth');  
-
-Route::resource('/dashboard/categories', 'AdminCategoryController')->except('show')->middleware('admin');
 
 Route::resource('/dashboard/peserta-pending', 'PesertaController')->middleware('admin');
 

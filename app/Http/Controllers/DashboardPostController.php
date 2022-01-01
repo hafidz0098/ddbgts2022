@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use App\Models\Category;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Support\Str;
@@ -31,9 +30,7 @@ class DashboardPostController extends Controller
      */
     public function create()
     {
-        return view('dashboard.posts.create',[
-            'categories' => Category::all()
-        ]);
+        return view('dashboard.posts.create');
     }
 
     /**
@@ -48,8 +45,7 @@ class DashboardPostController extends Controller
         $validatedData = $request->validate([
             'title' => 'required|max:255',
             'slug' => 'required|unique:posts',
-            'category_id' => 'required',
-            'image' => 'image|file|max:1024',   
+            'image' => 'required|image|file|max:1024',   
             'body' => 'required'
         ]);
 
@@ -97,8 +93,7 @@ class DashboardPostController extends Controller
             abort(403);
         }
         return view('dashboard.posts.edit',[             
-            'post' => $post,
-            'categories' => Category::all()
+            'post' => $post
         ]);
     }
 
@@ -113,7 +108,6 @@ class DashboardPostController extends Controller
     {
         $rules = [
             'title' => 'required|max:255',
-            'category_id' => 'required',
             'image' => 'image|file|max:1024',   
             'body' => 'required'
         ];
@@ -131,14 +125,14 @@ class DashboardPostController extends Controller
             }
 
             $path = $request->file('image')->store('post_image', 's3');
+            $path = Storage::disk('s3')->url($path);
+            $validatedData['image'] = $path;
+            $validatedData['image_id'] = basename($path);
         }
 
         $validatedData['user_id'] = auth()->user()->id;
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
-        $path = Storage::disk('s3')->url($path);
-
-        $validatedData['image'] = $path;
-        $validatedData['image_id'] = basename($path);
+        
 
         if($post->author->id !== auth()->user()->id) {
             abort(403);
