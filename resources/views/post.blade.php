@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-10 col-md-8">
-                    <img src="{{ $post->image }}" class="img-fluid">
+                    <img src="{{ $post->image }}" class="img-fluid w-100 post-img">
                     <div class="card bg">
     
                         <article class="my-3">
