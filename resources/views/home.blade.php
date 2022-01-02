@@ -372,6 +372,16 @@
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/jogja%20magazine.webp" class="img-fluid" alt="logo jogka magazine">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/infokupedia.webp" class="img-fluid" alt="logo infokupedia">
+        </div>
+
+        
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
           <img src="frontend/assets/img/bone_media.webp" class="img-fluid" alt="logo berita kota" width="60px">
         </div>
 
@@ -386,6 +396,28 @@
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
           <img src="frontend/assets/img/clients/info-lutra.webp" class="img-fluid" alt="logo info lutra" width="60px">
         </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/duta%20pelajar%20makassar.webp" class="img-fluid" alt="logo duta makassar" width="60px">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/SULSEL_EVENT.webp" class="img-fluid" alt="logo sulsel event" width="60px">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/medpart%20yk.webp" class="img-fluid" alt="logo medpart yk" width="60px">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/medpartid.webp" class="img-fluid" alt="logo medpart yk" width="60px">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="frontend/assets/img/clients/Radio%20PLS.webp" class="img-fluid" alt="logo medpart yk" width="60px">
+        </div>
+
+        
 
 
 
