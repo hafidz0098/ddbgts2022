@@ -19,7 +19,7 @@
                   <a><span>01.</span> Lakukan pembayaran melalui mobile banking atau atm terdekat</a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                          Pembayaran dapat dilakukan dengan transfer sebesar Rp 25.000,- ke salah satu rekening di bawah ini: <br>
+                          Pembayaran dapat dilakukan dengan transfer ke salah satu rekening di bawah ini: <br>
                           • BNI 1193024137 a/n <strong>Nurhafidah</strong> <br>
                           • DANA 082335319820 a/n <strong>Serlinda</strong> <br>
                           • OVO 082335319820 <strong>Serlinda</strong> <br>
