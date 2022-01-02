@@ -268,7 +268,8 @@
                     Pembayaran dapat dilakukan dengan transfer sebesar Rp 25.000,- ke salah satu rekening di bawah ini: <br>
                     • BNI 1193024137 a/n <strong>Nurhafidah</strong> <br>
                     • DANA 082335319820 a/n <strong>Serlinda</strong> <br>
-                    • OVO 082335319820 a/n <strong>Serlinda</strong>
+                    • OVO 082335319820 a/n <strong>Serlinda</strong> <br>
+                    • Shopeepay 087806481670 a/n <strong>Annisakhazizah</strong>
                   </p>
                 </div>
               </li>
