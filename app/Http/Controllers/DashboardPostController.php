@@ -19,7 +19,8 @@ class DashboardPostController extends Controller
     public function index()
     {
         return view('dashboard.posts.index',[
-            'posts' => Post::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->get()
+            // 'posts' => Post::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->get()
+            'posts' => Post::orderBy('created_at', 'desc')->get()
         ]);
     }
 
@@ -73,9 +74,9 @@ class DashboardPostController extends Controller
      */
     public function show(Post $post)
     {
-        if($post->author->id !== auth()->user()->id) {
-            abort(403);
-        }
+        // if($post->author->id !== auth()->user()->id) {
+        //     abort(403);
+        // }
         return view('dashboard.posts.show', [
             'post' => $post
         ]);
@@ -89,9 +90,9 @@ class DashboardPostController extends Controller
      */
     public function edit(Post $post)
     {
-        if($post->author->id !== auth()->user()->id) {
-            abort(403);
-        }
+        // if($post->author->id !== auth()->user()->id) {
+        //     abort(403);
+        // }
         return view('dashboard.posts.edit',[             
             'post' => $post
         ]);
@@ -134,9 +135,9 @@ class DashboardPostController extends Controller
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
         
 
-        if($post->author->id !== auth()->user()->id) {
-            abort(403);
-        }
+        // if($post->author->id !== auth()->user()->id) {
+        //     abort(403);
+        // }
 
         Post::where('id', $post->id)
             ->update($validatedData);
@@ -152,9 +153,9 @@ class DashboardPostController extends Controller
      */
     public function destroy(Post $post)
     {
-        if($post->author->id !== auth()->user()->id) {
-            abort(403);
-        }
+        // if($post->author->id !== auth()->user()->id) {
+        //     abort(403);
+        // }
 
         if($post->image){
             Storage::disk('s3')->delete('post_image/'.$post->image_id); 
