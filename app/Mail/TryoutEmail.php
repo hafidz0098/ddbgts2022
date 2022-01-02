@@ -30,6 +30,7 @@ class TryoutEmail extends Mailable
     public $meeting_id;
     public $meeting_passcode;
     public $link_zoom;
+    public $link_to;
 
     public function __construct(Peserta $data, Email $email)
     {
@@ -46,6 +47,7 @@ class TryoutEmail extends Mailable
         $this->meeting_id = $email->meeting_id;
         $this->meeting_passcode = $email->meeting_passcode;
         $this->link_zoom = $email->link_zoom;
+        $this->link_to = $email->link_to;
     }
 
     /**

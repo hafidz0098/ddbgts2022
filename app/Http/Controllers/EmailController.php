@@ -85,7 +85,8 @@ class EmailController extends Controller
             'lokasi' => 'required',
             'meeting_id' => 'required',
             'meeting_passcode' => 'required',
-            'link_zoom' => 'required'
+            'link_zoom' => 'required',
+            'link_to' => 'required'
         ]);
 
         $email->email = $request->input('email');
@@ -100,6 +101,7 @@ class EmailController extends Controller
         $email->meeting_id = $request->input('meeting_id');
         $email->meeting_passcode = $request->input('meeting_passcode');
         $email->link_zoom = $request->input('link_zoom');
+        $email->link_to = $request->input('link_to');
         $email->sent_by = auth()->user()->name;
         
         if($peserta->send_tryout == 1){
@@ -131,7 +133,8 @@ class EmailController extends Controller
             'lokasi' => 'required',
             'meeting_id' => 'required',
             'meeting_passcode' => 'required',
-            'link_zoom' => 'required'
+            'link_zoom' => 'required',
+            'link_tm' => 'required'
         ]);
 
         $email->email = $request->input('email');
@@ -146,6 +149,7 @@ class EmailController extends Controller
         $email->meeting_id = $request->input('meeting_id');
         $email->meeting_passcode = $request->input('meeting_passcode');
         $email->link_zoom = $request->input('link_zoom');
+        $email->link_to = $request->input('link_tm');
         $email->sent_by = auth()->user()->name;
         
         if($peserta->send_tm == 1){

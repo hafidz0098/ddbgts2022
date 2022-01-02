@@ -29,6 +29,8 @@ class CreateEmailsTable extends Migration
             $table->string('meeting_id');
             $table->string('meeting_passcode');
             $table->string('link_zoom');
+            $table->string('link_to')->nullable();
+            $table->string('link_tm')->nullable();
             $table->string('sent_by')->nullable();
             $table->timestamps();
         });

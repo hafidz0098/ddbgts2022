@@ -103,6 +103,7 @@
                                 | Lokasi               | :             | {{$lokasi}}          |
                                 | Zoom Meeting ID      | :             | {{$meeting_id}}      |
                                 | Zoom Meeting Passcode| :             | {{$meeting_passcode}}|
+                                | Zoom Meeting Link    | :             | {{$link_zoom}}       |
                               @endcomponent
                             </div>
                           </td>
@@ -113,7 +114,7 @@
                               <tbody>
                                 <tr>
                                   <td style="border: none; border-radius: 3px; color: white; cursor: auto; padding: 15px 19px;" align="center" valign="middle" bgcolor="#5865f2">
-                                    <a href={{ $link_zoom }} style="text-decoration: none; line-height: 100%; background: #5865f2; color: white; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; text-transform: none; margin: 0px;" target="_blank" rel="noopener">Join Try Out</a>
+                                    <a href={{ $link_tm }} style="text-decoration: none; line-height: 100%; background: #5865f2; color: white; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; text-transform: none; margin: 0px;" target="_blank" rel="noopener">Join Talents Mapping</a>
                                   </td>
                                 </tr>
                               </tbody>

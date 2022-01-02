@@ -97,9 +97,9 @@ class PesertaController extends Controller
 
         if($validatedData['status_id'] == 2){
             Storage::disk('s3')->delete('bukti_tf/'.$peserta->image_id); 
-            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2022", "Join Group Whatsapp", "www.youtube.com"));
+            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Berhasil", "Selamat, pendaftaran Anda telah berhasil dilakukan. Silahkan klik tombol di bawah ini untuk bergabung dengan grup WhatsApp DDBGTS 2022", "Join Group Whatsapp", "https://chat.whatsapp.com/KFb3FiURRmCLDzvLgqdKjs"));
         }else{
-            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Gagal", "Mohon maaf, pendaftaran Anda belum berhasil dilakukan. Mohon melakukan pendaftaran ulang", "Daftar Ulang", "www.twitter.com"));
+            Mail::to($peserta->email)->send(new KonfirmasiEMail($peserta, "Pendaftaran DDBGTS Gagal", "Mohon maaf, pendaftaran Anda belum berhasil dilakukan. Mohon melakukan pendaftaran ulang", "Daftar Ulang", "https://ddbgts.com/daftar"));
         }
 
         return redirect('/dashboard/peserta-pending')->with('success', 'Peserta has been updated!');

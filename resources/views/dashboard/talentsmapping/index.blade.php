@@ -122,9 +122,18 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="link_zoom" class="form-label">Meeting Passcode</label>
+                <label for="link_zoom" class="form-label">Meeting URL</label>
                 <input type="text" class="form-control @error('link_zoom') is-invalid @enderror" id="link_zoom" name="link_zoom" placeholder="Masukkan link zoom" autofocus value="https://us02web.zoom.us/j/87673028345?pwd=Ny9WRDgzUUxUYlVvUkhnQUpyNEJvZz09" >
                 @error('link_zoom')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="mb-3">
+                <label for="link_tm" class="form-label">Link TM</label>
+                <input type="text" class="form-control @error('link_tm') is-invalid @enderror" id="link_tm" name="link_tm" placeholder="Masukkan link TM" autofocus value="https://us02web.zoom.us/j/87673028345?pwd=Ny9WRDgzUUxUYlVvUkhnQUpyNEJvZz09" >
+                @error('link_tm')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
