@@ -415,14 +415,6 @@
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
           <img src="frontend/assets/img/clients/Radio%20PLS.webp" class="img-fluid" alt="logo medpart yk" width="60px">
         </div>
-
-        
-
-
-
-
-
-
       </div>
 
     </div>
