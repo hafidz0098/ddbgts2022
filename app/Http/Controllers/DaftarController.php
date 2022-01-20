@@ -14,11 +14,21 @@ use Illuminate\Support\Facades\Storage;
 class DaftarController extends Controller
 {
     public function index(){
-        return view('daftar.index', [
-            'title' => 'daftar',
-            'active' => 'daftar',
-            'rumpuns' => Rumpun::all()
-        ]);
+
+        $date = date('Y-m-d H:i:s');
+        if($date > "2022-01-21 14:00:00"){
+            return view('daftar.tutup',[
+                'title' => 'daftar',
+                'active' => 'daftar' 
+            ]);
+        }else{
+            return view('daftar.index', [
+                'title' => 'daftar',
+                'active' => 'daftar',
+                'rumpuns' => Rumpun::all()
+            ]);
+        }
+        
     }
 
     public function store(Request $request){

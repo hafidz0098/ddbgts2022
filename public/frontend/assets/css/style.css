@@ -1005,6 +1005,10 @@ section {
     padding-top: 60px;
 }
 
+.daftar h1{
+    color: white !important;
+}
+
 .daftar .form-label {
     color: #fff !important;
 }
