@@ -3,8 +3,8 @@
 <section id="daftar" class="daftar section-bg-regis">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="section-title" style="margin-top: 150px; margin-bottom: 150px;">
-                <h2>Pendaftaran DDBGTS 2022 Telah ditutup</h2>
+            <div class="section-title blog-container" style="margin-top: 120px; margin-bottom: 120px;">
+                <h2>Mohon Maaf<br>Pendaftaran DDBGTS 2022 Telah ditutup</h2>
             </div>
         </div>
     </div>

@@ -15,6 +15,11 @@
                 {{ session('success') }}
                 </div>
               @endif
+              @if(session()->has('daftarError'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ session('daftarError') }}
+                </div>
+              @endif
                 <form method="POST" action="/daftar" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">

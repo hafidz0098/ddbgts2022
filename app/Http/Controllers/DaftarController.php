@@ -53,18 +53,20 @@ class DaftarController extends Controller
             'bukti_tf.max' => 'Ukuran maksimal adalah 1 Mb'
         ]);
 
-        $path = $request->file('bukti_tf')->store('bukti_tf', 's3');
+        // $path = $request->file('bukti_tf')->store('bukti_tf', 's3');
 
-        $path = Storage::disk('s3')->url($path);
+        // $path = Storage::disk('s3')->url($path);
         
-        $peserta = Peserta::create($validatedData);
-        $peserta->image_id = basename($path);
-        $peserta->bukti_tf = $path;
-        $peserta->save();
+        // $peserta = Peserta::create($validatedData);
+        // $peserta->image_id = basename($path);
+        // $peserta->bukti_tf = $path;
+        // $peserta->save();
         
 
-        Mail::to($validatedData['email'])->send(new WelcomeEmail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));
-        Mail::to("ddbgts2022.2@gmail.com")->send(new NotifEmail("Notifikasi Pendaftar Baru", "Halo admin, ada pendaftar baru nih silahkan segera cek website"));
-        return redirect('/daftar')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email anda!');
+        // Mail::to($validatedData['email'])->send(new WelcomeEmail($peserta, "Terima kasih telah melakukan pendaftaran di DDBGTS 2022", "Silahkan menunggu email konfirmasi dari panitia dalam 1x24 jam"));
+        // Mail::to("ddbgts2022.2@gmail.com")->send(new NotifEmail("Notifikasi Pendaftar Baru", "Halo admin, ada pendaftar baru nih silahkan segera cek website"));
+        // return redirect('/daftar')->with('success', 'Pendaftaran berhasil, silahkan cek inbox/spam email anda!');
+
+        return back()->with('daftarError', 'Pendaftaran Gagal, Pendaftaran DDBGTS 2022 sudah ditutup!');
     }
 }
