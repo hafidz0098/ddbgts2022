@@ -58,7 +58,7 @@
                             </div>
                         @enderror
                     </div>
-                    <div class="mb-3">
+                    {{-- <div class="mb-3">
                         <label for="rumpun" class="form-label">Kategori TRYOUT</label>
                         <select class="form-select" name="rumpun_id">
                             @foreach ($rumpuns as $rumpun)
@@ -69,7 +69,7 @@
                                 @endif
                             @endforeach
                         </select>
-                    </div>
+                    </div> --}}
 
                     <div class="mb-3">
                         <label for="formFile" class="form-label">Bukti Bayar</label>

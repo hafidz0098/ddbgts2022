@@ -16,7 +16,7 @@ class DaftarController extends Controller
     public function index(){
 
         $date = date('Y-m-d H:i:s');
-        if($date > "2022-01-21 14:00:00"){
+        if($date > "2026-01-21 14:00:00"){
             return view('daftar.tutup',[
                 'title' => 'daftar',
                 'active' => 'daftar' 
